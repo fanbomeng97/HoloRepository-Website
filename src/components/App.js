@@ -13,38 +13,23 @@ class App extends Component {
                         <Route
                             exact
                             path="/"
-                            render={props => (
-                                <HomePage
-                                    {...props}
-                                />
-                            )}
+                            render={() => (<HomePage/>)}
                         />
                         <Route
                             exact
                             path="/home"
-                            render={props => (
-                                <HomePage
-                                    {...props}
-                                />
-                            )}
+
+                            render={() => (<HomePage/>)}
                         />
                         <Route
                             exact
                             path="/intro"
-                            render={props => (
-                                <IntroPage
-                                    {...props}
-                                />
-                            )}
+                            render={() => (<IntroPage/>)}
                         />
                         <Route
                             exact
                             path="/groupmember"
-                            render={props => (
-                                <GroupMemberPage
-                                    {...props}
-                                />
-                            )}
+                            render={() => (<GroupMemberPage/>)}
                         />
                     </Switch>
                 </BrowserRouter>

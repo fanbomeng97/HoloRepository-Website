@@ -4,11 +4,10 @@ import SharedFooter from "./shared/Footer";
 import {
     Header,
     Segment,
-    Image,
     Grid,
-    Button,
     Divider,
-    Container
+    Container,
+    Card
 } from "semantic-ui-react";
 
 class IntroPage extends Component {
@@ -24,7 +23,7 @@ class IntroPage extends Component {
                             fontSize: '4em',
                             fontWeight: 'normal',
                             marginBottom: 0,
-                            marginTop: '1em',
+                            marginTop: '2em',
                         }}/>
                 <Segment style={{ padding: '5em 0em'}} vertical>
                     <Container textAlign='justified'>
@@ -38,11 +37,12 @@ class IntroPage extends Component {
                                     Recent technical advancements in the realm of augmented reality (AR) and the availability
                                     of consumer head-mounted display (HMD) devices such as the Microsoft HoloLens have opened
                                     a wealth of opportunities for healthcare applications, particularly in medical imaging.
-                                    Several approaches have been proposed to transform imaging studies, such as CT or MRI scans,
-                                    into three-dimensional models which can be inspected and manipulated in an AR experience [1–4].
-                                    Generally, all studies agree that the technology is very promising and may even revolutionise
-                                    the practice of medicine [5]. However, virtually every existing workflow relies on significant
-                                    manual guidance to conduct steps like segmentation or conversion to polygonal models.
+                                    Several approaches have been proposed to transform imaging studies, such as CT or MRI
+                                    scans, into three-dimensional models which can be inspected and manipulated in an AR
+                                    experience [1–4]. Generally, all studies agree that the technology is very promising
+                                    and may even revolutionise the practice of medicine [5]. However, virtually every
+                                    existing workflow relies on significant manual guidance to conduct steps like segmentation
+                                    or conversion to polygonal models.
                                 </p>
 
                                 <p style={{ fontSize: '1.2em' }}>
@@ -120,11 +120,44 @@ class IntroPage extends Component {
                                 </p>
                             </Grid.Column>
                         </Grid>
+                        <Card fluid style={{ marginTop: '3em'}}>
+                            <Card.Content>
+                                <Card.Header>References</Card.Header>
+                            </Card.Content>
+                            <Card.Content>
+                                <p>[1]	Smith CM. Medical Imaging in Mixed Reality: A holographics software pipeline.
+                                    University College London, 2018.</p>
+                                <p>[2]	Pratt P, Ives M, Lawton G, Simmons J, Radev N, Spyropoulou L, et al. Through the
+                                    HoloLensTM looking glass: augmented reality for extremity reconstruction surgery using
+                                    3D vascular models with perforating vessels. Eur Radiol Exp
+                                    2018;2:2. doi:10.1186/s41747-017-0033-2.</p>
+                                <p>[3]	Affolter R, Eggert S, Sieberth T, Thali M, Ebert LC. Applying augmented reality
+                                    during a forensic autopsy—Microsoft HoloLens as a DICOM viewer. Journal of Forensic
+                                    Radiology and Imaging 2019;16:5–8. doi:10.1016/j.jofri.2018.11.003.</p>
+                                <p>[4]	Page M. Visualization of Complex Medical Data Using Next-Generation Holographic
+                                    Techniques 2017.</p>
+                                <p>[5]	Beydoun A, Gupta V, Siegel E. DICOM to 3D Holograms: Use Case for Augmented
+                                    Reality in Diagnostic and Interventional Radiology. SIIM Scientific Session Posters
+                                    and Demonstrations 2017:4.</p>
+                                <p>[6]	Çiçek Ö, Abdulkadir A, Lienkamp SS, Brox T, Ronneberger O. 3D U-Net: Learning
+                                    Dense Volumetric Segmentation from Sparse Annotation. ArXiv:160606650 [Cs] 2016.</p>
+                                <p>[7]	Beers A, Brown J, Chang K, Hoebel K, Gerstner E, Rosen B, et al. DeepNeuro: an
+                                    open-source deep learning toolbox for neuroimaging. ArXiv:180804589 [Cs] 2018.</p>
+                                <p>[8]	Kamel PI, Nagy PG. Patient-Centered Radiology with FHIR: an Introduction to the
+                                    Use of FHIR to Offer Radiology a Clinically Integrated Platform. J Digit Imaging
+                                    2018;31:327–33. doi:10.1007/s10278-018-0087-6.</p>
+                            </Card.Content>
+                        </Card>
                     </Container>
+
                 </Segment>
                 <SharedFooter/>
             </div>
         );
+    }
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
     }
 }
 

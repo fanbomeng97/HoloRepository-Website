@@ -6,10 +6,8 @@ import {
     Segment,
     Image,
     Grid,
-    Button,
     Divider
 } from "semantic-ui-react";
-import BackgroundImage from "../images/background.jpg";
 
 class GroupMemberPage extends Component {
     render() {
@@ -25,7 +23,7 @@ class GroupMemberPage extends Component {
                             fontSize: '4em',
                             fontWeight: 'normal',
                             marginBottom: 0,
-                            marginTop: '1em',
+                            marginTop: '2em',
                         }}/>
                     <Grid container style={{ padding: '5em 0em'}}>
                         <Grid.Row>
@@ -135,6 +133,10 @@ class GroupMemberPage extends Component {
                 <SharedFooter/>
             </div>
         );
+    }
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
     }
 }
 

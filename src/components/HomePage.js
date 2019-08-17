@@ -11,12 +11,11 @@ import {
     Icon
 } from "semantic-ui-react";
 import {Link} from "react-router-dom";
-import {Menu} from "semantic-ui-react/dist/commonjs/collections/Menu";
 
 class HomePage extends Component {
     render() {
         return (
-            <div >
+            <div>
                 <SharedHeader activeItem='Home'/>
                 <div style={{
                         minHeight: 700,
@@ -115,6 +114,10 @@ class HomePage extends Component {
                 <SharedFooter/>
             </div>
         );
+    }
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
     }
 }
 
