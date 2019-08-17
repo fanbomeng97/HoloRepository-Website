@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import './App.css';
 import HomePage from "./HomePage";
 import GroupMemberPage from "./GroupMemberPage";
 import IntroPage from "./IntroPage";
-import GitHubPage from "./GitHubPage";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
@@ -44,15 +42,6 @@ class App extends Component {
                             path="/groupmember"
                             render={props => (
                                 <GroupMemberPage
-                                    {...props}
-                                />
-                            )}
-                        />
-                        <Route
-                            exact
-                            path="/github"
-                            render={props => (
-                                <GitHubPage
                                     {...props}
                                 />
                             )}

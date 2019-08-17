@@ -3,10 +3,11 @@ import {
     Icon,
     Image,
     Menu,
-    Segment,
+    Container,
     Sticky
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import "./Header.css";
 
 class SharedHeader extends Component {
     constructor(props) {
@@ -23,8 +24,8 @@ class SharedHeader extends Component {
 
         return (
             <Sticky>
-                <div>
-                    <Menu pointing secondary size='large' style={{backgroundColor: "#ffffff", padding: '0em 10em'}}>
+                <Menu id = "menu" pointing secondary size='huge'>
+                    <Container >
                         <Menu.Item as={Link} to="/home" style={{ padding: '1em 2em'}}>
                             <Image src="Images/logo_with_title.png" size = "small"/>
                         </Menu.Item>
@@ -61,15 +62,17 @@ class SharedHeader extends Component {
 
                         <Menu.Item
                             name='github'
+                            as='a'
                             active={activeItem === 'github'}
                             onClick={this.handleItemClick}
-                            as={Link} to="/github"
+                            href= "https://github.com/nbckr/HoloRepository-Core"
+                            position = 'right'
                         >
                             <Icon name = "github"/>
                             {"GitHub"}
                         </Menu.Item>
-                    </Menu>
-                </div>
+                    </Container>
+                </Menu>
             </Sticky>
         );
     }

@@ -19,11 +19,6 @@ class SharedFooter extends Component {
                     <a href="https://github.com/nbckr/HoloRepository-Core">Source Code</a> and{" "}
                     <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">Licence</a>
                 </div>
-                <div>
-                    Pictures used is this project are from {" "}
-                    <a href="https://www.bctechnology.com/news/2017/11/2/Microsoft-Vancouver-Partners-With-BCIT-to-Develop-Virtual-Reality--Augmented-Reality--Mixed-Reality-Curriculum.cfm">here</a> {", "}
-                    if we violate your rights please contact us and we will delete it
-                </div>
             </footer>
         );
     }
