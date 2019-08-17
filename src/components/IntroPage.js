@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import SharedHeader from "../shared/Header";
-import SharedFooter from "../shared/Footer";
+import SharedHeader from "./shared/Header";
+import SharedFooter from "./shared/Footer";
 import {
     Header,
     Segment,
@@ -14,10 +14,7 @@ class IntroPage extends Component {
     render() {
         return (
             <div>
-                <SharedHeader
-                    activeItem='Introduction'
-                />
-
+                <SharedHeader activeItem='Introduction'/>
                     <Header
                         textAlign='center'
                         as='h1'
@@ -27,12 +24,10 @@ class IntroPage extends Component {
                             fontWeight: 'normal',
                             marginBottom: 0,
                             marginTop: '1em',
-                        }}
-                    />
-
+                        }}/>
                 <Segment style={{ padding: '5em 0em'}} vertical>
                     <Grid container stackable verticalAlign='middle'>
-                        <Grid.Column width={800}>
+                        <Grid.Column width={16}>
                             <Header as='h3' style={{ fontSize: '2em' }}>
                                 HoloRepositoryUI
                             </Header>

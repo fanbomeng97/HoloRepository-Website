@@ -6,7 +6,7 @@ class SharedFooter extends Component {
     render() {
         return (
             <footer>
-                <Image container src= "Images/logos.png" style={{
+                <Image src= "Images/logos.png" style={{
                     width: '814px',
                     height: '58.5px',
                     display: 'block',

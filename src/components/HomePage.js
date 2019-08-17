@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import SharedHeader from "../shared/Header";
-import SharedFooter from "../shared/Footer";
+import SharedHeader from "./shared/Header";
+import SharedFooter from "./shared/Footer";
 import BackgroundImage from "../images/background.jpg";
 import {
     Header,
@@ -14,23 +14,18 @@ class HomePage extends Component {
     render() {
         return (
             <div>
-                <SharedHeader
-                    activeItem='Home'
-                />
-
+                <SharedHeader activeItem='Home'/>
                 <Segment
                     inverted
                     textAlign='center'
+                    vertical
                     style={{
                         minHeight: 900,
                         padding: '1em 0em',
                         backgroundImage: `url(${BackgroundImage})`,
                         backgroundPosition: 'center',
-                        backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat'
-                    }}
-                    vertical
-                >
+                        backgroundSize: 'cover'
+                    }}>
                     <Header
                         textAlign='center'
                         as='h1'
@@ -40,10 +35,9 @@ class HomePage extends Component {
                             fontWeight: 'normal',
                             marginBottom: 0,
                             marginTop: '3em',
-                        }}
-                    />
+                        }}/>
                     <Grid container stackable verticalAlign='middle'>
-                        <Grid.Column width={80}>
+                        <Grid.Column width={16}>
                             <Header
                                 textAlign='center'
                                 as='h3'
@@ -98,7 +92,6 @@ class HomePage extends Component {
                         </Grid.Row>
                     </Grid>
                 </Segment>
-
                 <SharedFooter/>
             </div>
         );

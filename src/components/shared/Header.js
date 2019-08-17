@@ -7,7 +7,6 @@ import {
     Sticky
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import Niels from "../images/header.jpg";
 
 class SharedHeader extends Component {
     constructor(props) {
@@ -25,9 +24,9 @@ class SharedHeader extends Component {
         return (
             <Sticky>
                 <div>
-                    <Menu pointing secondary size='huge' style={{backgroundColor: "#ffffff"}}>
-                        <Menu.Item style={{ padding: '1em 2em'}}>
-                            <Image src="Images/logo_with_title.png" style={{width: '188.4px', height: '34.05px'}}/>
+                    <Menu pointing secondary size='large' style={{backgroundColor: "#ffffff", padding: '0em 10em'}}>
+                        <Menu.Item as={Link} to="/home" style={{ padding: '1em 2em'}}>
+                            <Image src="Images/logo_with_title.png" size = "small"/>
                         </Menu.Item>
 
                         <Menu.Item
@@ -73,11 +72,6 @@ class SharedHeader extends Component {
                 </div>
             </Sticky>
         );
-    }
-
-    componentWillMount() {
-        const data = require('../data/Information.json');
-        console.log(data);
     }
 }
 

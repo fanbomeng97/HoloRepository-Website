@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import SharedHeader from "../shared/Header";
-import SharedFooter from "../shared/Footer";
+import SharedHeader from "./shared/Header";
+import SharedFooter from "./shared/Footer";
 import {
     Header,
     Segment,
@@ -15,9 +15,7 @@ class GroupMemberPage extends Component {
     render() {
         return (
             <div>
-                <SharedHeader
-                    activeItem='Group members'
-                />
+                <SharedHeader activeItem='Group members'/>
                 <Header
                     textAlign='center'
                     as='h1'
@@ -27,9 +25,7 @@ class GroupMemberPage extends Component {
                         fontWeight: 'normal',
                         marginBottom: 0,
                         marginTop: '1em',
-                    }}
-                />
-
+                    }}/>
                 <Grid container style={{ padding: '5em 0em'}}>
                     <Grid.Row>
                         <p style={{padding: '0em 1em'}}>
@@ -38,7 +34,7 @@ class GroupMemberPage extends Component {
                     </Grid.Row>
                     <Grid.Row>
                         <Grid.Column width={3}>
-                            <Image bordered rounded size='large' src= "Images/niels.jpg" />
+                            <Image src= "Images/niels.jpg" circular/>
                         </Grid.Column>
                         <Grid.Column width={13}>
                             <Header as='h3' style={{ fontSize: '2em' }}>
@@ -57,7 +53,7 @@ class GroupMemberPage extends Component {
 
                     <Grid.Row>
                         <Grid.Column width={3}>
-                            <Image bordered rounded size='large' src= "Images/wenjie.png" />
+                            <Image src= "Images/wenjie.png" circular/>
                         </Grid.Column>
                         <Grid.Column width={13}>
                             <Header as='h3' style={{ fontSize: '2em' }}>
@@ -76,7 +72,7 @@ class GroupMemberPage extends Component {
 
                     <Grid.Row>
                         <Grid.Column width={3}>
-                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
+                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' circular/>
                         </Grid.Column>
                         <Grid.Column width={13}>
                             <Header as='h3' style={{ fontSize: '2em' }}>
@@ -95,7 +91,7 @@ class GroupMemberPage extends Component {
 
                     <Grid.Row>
                         <Grid.Column width={3}>
-                            <Image bordered rounded size='large' src= "Images/fanbo.png" />
+                            <Image src= "Images/fanbo.png" circular/>
                         </Grid.Column>
                         <Grid.Column width={13}>
                             <Header as='h3' style={{ fontSize: '2em' }}>
@@ -114,7 +110,7 @@ class GroupMemberPage extends Component {
 
                     <Grid.Row>
                         <Grid.Column width={3}>
-                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
+                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' circular/>
                         </Grid.Column>
                         <Grid.Column width={13}>
                             <Header as='h3' style={{ fontSize: '2em' }}>

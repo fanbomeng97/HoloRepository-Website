@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import SharedHeader from "../shared/Header";
-import SharedFooter from "../shared/Footer";
+import SharedHeader from "./shared/Header";
+import SharedFooter from "./shared/Footer";
 import {Header, Segment} from "semantic-ui-react";
 
 class GitHubPage extends Component {
