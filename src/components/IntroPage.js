@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SharedHeader from "./shared/Header";
 import SharedFooter from "./shared/Footer";
+import "./FontStyle.css";
 import {
     Header,
     Segment,
