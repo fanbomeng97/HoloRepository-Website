@@ -10,7 +10,7 @@ import {
     Divider,
     Container
 } from "semantic-ui-react";
-import { isBrowser, isTablet,isMobile } from "react-device-detect";
+import { isBrowser,isMobile } from "react-device-detect";
 
 class TeamPage extends Component {
     render() {

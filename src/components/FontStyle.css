@@ -11,3 +11,8 @@
 #common{
     font-size: 1.2em;
 }
+
+#common_padding{
+    font-size: 1.2em;
+    padding: 0.5em 4em;
+}

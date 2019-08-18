@@ -29,7 +29,7 @@ class HomePage extends Component {
                         marginTop: '5',
                     }}>
                     <Segment style = {{
-                        backgroundColor: 'rgba(0,0,0,0.5)',
+                        backgroundColor: 'rgba(0,0,0,0.4)',
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         height: 700}}>
@@ -51,7 +51,7 @@ class HomePage extends Component {
                                 3-dimensional holograms, storing data on a cloud-based platform and making it available
                                 for other systems.
                             </p>
-                            <Button primary size='huge' as={Link} to="/intro"style={{marginTop: 50}}>
+                            <Button primary size='huge' as={Link} to="/intro" style={{marginTop: 50}}>
                                 Start Explore
                                 <Icon name='right arrow' />
                             </Button>
@@ -59,9 +59,9 @@ class HomePage extends Component {
                     </Segment>
                 </div>
 
-                <Segment style={{ padding: '8em 0em'}} vertical>
+                <Segment style={{ padding: '8em 0em' }} vertical >
                     <Container textAlign='justified'>
-                        <Grid container stackable >
+                        <Grid container stackable style={{ backgroundColor: '#fafafa' }}>
                             <Grid.Row>
                                 <Grid.Column width={8}>
                                     <List horizontal style={{ marginBottom: 20}}>

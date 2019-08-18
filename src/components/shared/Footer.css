@@ -9,8 +9,8 @@ footer {
 }
 
 #image{
-  width: 814px;
-  height: 58.5px;
+  width: 50%;
+  height: 50%;
   display: block;
   margin: auto auto 2em;
 }
