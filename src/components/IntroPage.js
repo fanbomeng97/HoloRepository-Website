@@ -10,6 +10,7 @@ import {
     Card,
     Label
 } from "semantic-ui-react";
+import { isBrowser,isTablet } from "react-device-detect";
 
 class IntroPage extends Component {
     render() {
@@ -36,7 +37,6 @@ class IntroPage extends Component {
                 </div>
                 <Segment style={{ padding: '3em 0em', backgroundColor: '#f8f8f8'}} vertical>
                     <Container textAlign='justified'>
-
                         <Segment fluid >
                             <Label ribbon style={{ padding: '0.5em 1em'}}>
                                 Background
@@ -45,7 +45,7 @@ class IntroPage extends Component {
                                 Background
                             </Header>
 
-                            <p id = "common_padding" >
+                            <p style={{ fontSize: '1.2em', padding: isBrowser || isTablet ? '0.5em 4em' : '0.5em 1em'}}>
                                 Recent technical advancements in the realm of augmented reality (AR) and the availability
                                 of consumer head-mounted display (HMD) devices such as the Microsoft HoloLens have opened
                                 a wealth of opportunities for healthcare applications, particularly in medical imaging.
@@ -57,7 +57,7 @@ class IntroPage extends Component {
                                 or conversion to polygonal models.
                             </p>
 
-                            <p id = "common_padding" >
+                            <p style={{ fontSize: '1.2em', padding: isBrowser || isTablet ? '0.5em 4em' : '0.5em 1em'}} >
                                 Neural networks can help automate many tedious tasks and are increasingly used in medical
                                 imaging. Architectures such as the 3D U-Net [6] generate models which autonomously create
                                 segmentation maps, even with relatively little training data. However, translating these
@@ -66,7 +66,7 @@ class IntroPage extends Component {
                                 Furthermore, different operating systems, software packages and dependencies obstruct
                                 successful usage [7].
                             </p>
-                            <p id = "common_padding" >
+                            <p style={{ fontSize: '1.2em', padding: isBrowser || isTablet ? '0.5em 4em' : '0.5em 1em'}} >
                                 With the HoloRepository project, we intend to build the technical base for a seamless
                                 workflow that allows practitioners to generate 3D models from imaging studies and access
                                 them in an AR setting with as little manual involvement as possible. Pre-trained neural
@@ -84,7 +84,7 @@ class IntroPage extends Component {
                             <Header id = "normal_2" style={{ padding: '0.5em 1em'}}>
                                 HoloRepositoryUI
                             </Header>
-                            <p id = "common_padding">
+                            <p style={{ fontSize: '1.2em', padding: isBrowser || isTablet ? '0.5em 4em' : '0.5em 1em'}}>
                                 A web-based application that allows practitioners to browse their patients and manage the
                                 generation of 3D models sourced from imaging studies like CT or MRI scans. The client-side
                                 application is accompanied by an API server that is responsible for communicating with the
@@ -99,7 +99,7 @@ class IntroPage extends Component {
                             <Header id = "normal_2" style={{ padding: '0.5em 1em'}}>
                                 HoloPipelines
                             </Header>
-                            <p id = "common_padding">
+                            <p style={{ fontSize: '1.2em', padding: isBrowser || isTablet ? '0.5em 4em' : '0.5em 1em'}}>
                                 A cloud-based service that performs the automatic generation of 3D models from 2D image
                                 stacks. Pre-trained neural network models are deployed and accessed with this component
                                 alongside traditional techniques like Hounsfield value thresholding.
@@ -113,7 +113,7 @@ class IntroPage extends Component {
                             <Header id = "normal_2" style={{ padding: '0.5em 1em'}}>
                                 HoloStorage
                             </Header>
-                            <p id = "common_padding">
+                            <p style={{ fontSize: '1.2em', padding: isBrowser || isTablet ? '0.5em 4em' : '0.5em 1em'}}>
                                 A cloud-based storage for medical 3D models and associated metadata. Entirely hosted on
                                 Microsoft Azure, a FHIR server stores the structured medical data and a Blob Storage server
                                 provides for the binary holographic data.
@@ -122,7 +122,7 @@ class IntroPage extends Component {
                             <Header id = "normal_2" style={{ padding: '0.5em 1em'}}>
                                 HoloStorageAccessor
                             </Header>
-                            <p id = "common_padding">
+                            <p style={{ fontSize: '1.2em', padding: isBrowser || isTablet ? '0.5em 4em' : '0.5em 1em'}}>
                                 An enhanced facade, offering a consistent interface to the HoloStorage and translating
                                 the public REST API to internal FHIR queries. To facilitate development of 3rd party
                                 components, the interface comes with an interactive OpenAPI documentation.
@@ -136,7 +136,7 @@ class IntroPage extends Component {
                             <Header id = "normal_2" style={{ padding: '0.5em 1em'}}>
                                 HoloStorageConnector
                             </Header>
-                            <p id = "common_padding">
+                            <p style={{ fontSize: '1.2em', padding: isBrowser || isTablet ? '0.5em 4em' : '0.5em 1em'}}>
                                 A Unity library handling the runtime network connections from HoloLens applications to
                                 the HoloStorage. Distributed as a separate UnityPackage, this is meant to facilitate
                                 development of 3rd party applications that plug into the HoloRepository ecosystem.
@@ -144,7 +144,7 @@ class IntroPage extends Component {
                             <Header id = "normal_2" style={{ padding: '0.5em 1em'}}>
                                 HoloRepository demo application
                             </Header>
-                            <p id = "common_padding">
+                            <p style={{ fontSize: '1.2em', padding: isBrowser || isTablet ? '0.5em 4em' : '0.5em 1em'}}>
                                 A simple application that demonstrates how to dynamically access 3D models stored in the
                                 HoloStorage. The scenes can be distributed alongside the Connector library and serve as
                                 examples and interactive documentation.

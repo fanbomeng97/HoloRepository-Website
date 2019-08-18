@@ -11,7 +11,8 @@ import {
     Button,
     Icon,
     Label,
-    List
+    List,
+    Image
 } from "semantic-ui-react";
 import {Link} from "react-router-dom";
 import { isBrowser, isTablet } from "react-device-detect";
@@ -59,9 +60,9 @@ class HomePage extends Component {
                     </Segment>
                 </div>
 
-                <Segment style={{ padding: '8em 0em' }} vertical >
+                <Segment style={{ padding: '5em 0em' }} vertical >
                     <Container textAlign='justified'>
-                        <Grid container stackable style={{ backgroundColor: '#fafafa' }}>
+                        <Grid container stackable >
                             <Grid.Row>
                                 <Grid.Column width={8}>
                                     <List horizontal style={{ marginBottom: 20}}>
@@ -81,6 +82,38 @@ class HomePage extends Component {
                                         application is accompanied by an API server that is responsible for communicating with the
                                         other components.
                                     </p>
+                                </Grid.Column>
+                                <Grid.Column width={8} align='middle'>
+                                    <Image src= "Images/ui.png" />
+                                </Grid.Column>
+                            </Grid.Row>
+
+                            <Grid.Row>
+                                <Grid.Column width={8} align='middle'>
+                                    <Image src= "Images/pipeline.png" />
+                                </Grid.Column>
+                                <Grid.Column width={8}>
+                                    <List horizontal style={{ marginBottom: 20}}>
+                                        <List.Item>
+                                            <Label circular style={{ backgroundColor: '#a9dc7f' }}>
+                                            </Label>
+                                        </List.Item>
+                                        <List.Item>
+                                            <Header as='h3' style={{ fontSize: isBrowser ? '2em' : '1.3em', fontWeight: 'normal' }}>
+                                                HoloPipelines
+                                            </Header>
+                                        </List.Item>
+                                    </List>
+                                    <p id = "grayFont">
+                                        A cloud-based service that performs the automatic generation of 3D models from 2D image
+                                        stacks. Pre-trained neural network models are deployed and accessed with this component
+                                        alongside traditional techniques like Hounsfield value thresholding.
+                                    </p>
+                                </Grid.Column>
+                            </Grid.Row>
+
+                            <Grid.Row>
+                                <Grid.Column width={8}>
                                     <List horizontal style={{ marginTop: 20, marginBottom: 20}}>
                                         <List.Item>
                                             <Label circular style={{ backgroundColor: '#8bbfe7'}}>
@@ -103,24 +136,16 @@ class HomePage extends Component {
                                         components, the interface comes with an interactive OpenAPI documentation.
                                     </p>
                                 </Grid.Column>
+                                <Grid.Column width={8} align='middle'>
+                                    <Image src= "Images/accessor.png" />
+                                </Grid.Column>
+                            </Grid.Row>
 
-                                <Grid.Column floated='right' width={8}>
-                                    <List horizontal style={{ marginBottom: 20}}>
-                                        <List.Item>
-                                            <Label circular style={{ backgroundColor: '#a9dc7f' }}>
-                                            </Label>
-                                        </List.Item>
-                                        <List.Item>
-                                            <Header as='h3' style={{ fontSize: isBrowser ? '2em' : '1.3em', fontWeight: 'normal' }}>
-                                                HoloPipelines
-                                            </Header>
-                                        </List.Item>
-                                    </List>
-                                    <p id = "grayFont">
-                                        A cloud-based service that performs the automatic generation of 3D models from 2D image
-                                        stacks. Pre-trained neural network models are deployed and accessed with this component
-                                        alongside traditional techniques like Hounsfield value thresholding.
-                                    </p>
+                            <Grid.Row>
+                                <Grid.Column width={8} align='middle'>
+                                    <Image src= "Images/lens.png" />
+                                </Grid.Column>
+                                <Grid.Column width={8}>
                                     <List horizontal style={{ marginTop: 20, marginBottom: 20}}>
                                         <List.Item>
                                             <Label circular style={{ backgroundColor: '#d1bcd2'}}>
@@ -144,6 +169,7 @@ class HomePage extends Component {
                                     </p>
                                 </Grid.Column>
                             </Grid.Row>
+
                         </Grid>
                     </Container>
                 </Segment>

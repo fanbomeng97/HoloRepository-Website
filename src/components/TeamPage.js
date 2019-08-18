@@ -11,25 +11,36 @@ import {
     Container
 } from "semantic-ui-react";
 import { isBrowser,isMobile } from "react-device-detect";
+import BackgroundImage from "../images/team.jpg";
 
 class TeamPage extends Component {
     render() {
         return (
             <div>
                 <SharedHeader activeItem='Team'/>
-                <Segment vertical>
-                    <Header
-                        textAlign='center'
-                        as='h1'
-                        content='Team'
-                        style={{
-                            fontSize: '4em',
-                            fontWeight: 'normal',
-                            marginBottom: 0,
-                            marginTop: '2em',
-                        }}/>
-                        <Container textAlign='left'>
-                            <Grid style={{ padding: '5em 0em'}}>
+
+                <div style={{
+                    minHeight: 200,
+                    backgroundImage: `url(${BackgroundImage})`,
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    marginTop: '5',
+                }}>
+                    <Segment style = {{
+                        backgroundColor: 'rgba(0,0,0,0.4)',
+                        backgroundPosition: 'center',
+                        backgroundSize: 'cover',
+                        height: 200}}>
+                        <Header
+                            textAlign='center'
+                            content='Team'
+                            style={{fontSize: '4em', fontWeight: 'normal', marginTop: 75, color: '#ffffff'}}/>
+                    </Segment>
+                </div>
+                <Segment vertical style={{ padding: '2em 0em', backgroundColor: '#f8f8f8'}}>
+                    <Container textAlign='left' >
+                        <Segment>
+                            <Grid style={{ padding: '1em 1em'}}>
                                 <Grid.Row>
                                     <p style={{padding: '0em 1em'}}>
                                         (Sorted by alphabetical)
@@ -134,7 +145,8 @@ class TeamPage extends Component {
                                     </Grid.Column>
                                 </Grid.Row>: ''}
                             </Grid>
-                        </Container>
+                        </Segment>
+                    </Container>
                 </Segment>
                 <SharedFooter/>
             </div>
