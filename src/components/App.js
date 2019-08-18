@@ -28,7 +28,7 @@ class App extends Component {
                         />
                         <Route
                             exact
-                            path="/groupmember"
+                            path="/group"
                             render={() => (<GroupMemberPage/>)}
                         />
                     </Switch>

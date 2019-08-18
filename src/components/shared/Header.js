@@ -56,7 +56,7 @@ class SharedHeader extends Component {
                         name='Group members'
                         active={activeItem === 'Group members'}
                         onClick={this.handleItemClick}
-                        as={Link} to="/groupmember"
+                        as={Link} to="/group"
                     >
                         <Icon name = "users"/>
                         {isBrowser || isTablet ? "Group Members" : ""}

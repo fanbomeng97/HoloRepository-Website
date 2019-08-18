@@ -2,7 +2,7 @@
   "name": "introduction-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://fanbomeng97.github.io/Introduction-Website",
+  "homepage": "http://fanbomeng97.github.io/HoloRepository-Website",
   "dependencies": {
     "react": "^16.9.0",
     "react-device-detect": "^1.7.5",
