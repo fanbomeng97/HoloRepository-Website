@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/HoloRepository-Website/static/css/main.686c3355.chunk.css",
-    "main.js": "/HoloRepository-Website/static/js/main.1ff4c67e.chunk.js",
-    "main.js.map": "/HoloRepository-Website/static/js/main.1ff4c67e.chunk.js.map",
+    "main.css": "/HoloRepository-Website/static/css/main.f805aa28.chunk.css",
+    "main.js": "/HoloRepository-Website/static/js/main.8cafb0ee.chunk.js",
+    "main.js.map": "/HoloRepository-Website/static/js/main.8cafb0ee.chunk.js.map",
     "runtime~main.js": "/HoloRepository-Website/static/js/runtime~main.bd5900b0.js",
     "runtime~main.js.map": "/HoloRepository-Website/static/js/runtime~main.bd5900b0.js.map",
-    "static/js/2.3dd7e21d.chunk.js": "/HoloRepository-Website/static/js/2.3dd7e21d.chunk.js",
-    "static/js/2.3dd7e21d.chunk.js.map": "/HoloRepository-Website/static/js/2.3dd7e21d.chunk.js.map",
+    "static/js/2.a3cc26a6.chunk.js": "/HoloRepository-Website/static/js/2.a3cc26a6.chunk.js",
+    "static/js/2.a3cc26a6.chunk.js.map": "/HoloRepository-Website/static/js/2.a3cc26a6.chunk.js.map",
     "index.html": "/HoloRepository-Website/index.html",
-    "precache-manifest.70350aa8ed5ef7b0d3e176a384e122e0.js": "/HoloRepository-Website/precache-manifest.70350aa8ed5ef7b0d3e176a384e122e0.js",
+    "precache-manifest.ec769a7f3fe500b0fbe2dec2d71bf18e.js": "/HoloRepository-Website/precache-manifest.ec769a7f3fe500b0fbe2dec2d71bf18e.js",
     "service-worker.js": "/HoloRepository-Website/service-worker.js",
-    "static/css/main.686c3355.chunk.css.map": "/HoloRepository-Website/static/css/main.686c3355.chunk.css.map",
-    "static/media/background.jpg": "/HoloRepository-Website/static/media/background.451c266f.jpg"
+    "static/css/main.f805aa28.chunk.css.map": "/HoloRepository-Website/static/css/main.f805aa28.chunk.css.map",
+    "static/media/background.png": "/HoloRepository-Website/static/media/background.5e3ed3fd.png",
+    "static/media/intro.jpg": "/HoloRepository-Website/static/media/intro.98e2e1a0.jpg",
+    "static/media/team.jpg": "/HoloRepository-Website/static/media/team.bd83dd67.jpg"
   }
 }
