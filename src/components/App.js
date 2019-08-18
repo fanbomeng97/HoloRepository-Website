@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import HomePage from "./HomePage";
-import GroupMemberPage from "./GroupMemberPage";
+import TeamPage from "./TeamPage";
 import IntroPage from "./IntroPage";
 import { HashRouter, Route, Switch } from "react-router-dom";
 
@@ -18,7 +18,6 @@ class App extends Component {
                         <Route
                             exact
                             path="/home"
-
                             render={() => (<HomePage/>)}
                         />
                         <Route
@@ -28,8 +27,8 @@ class App extends Component {
                         />
                         <Route
                             exact
-                            path="/group"
-                            render={() => (<GroupMemberPage/>)}
+                            path="/Team"
+                            render={() => (<TeamPage/>)}
                         />
                     </Switch>
                 </HashRouter>

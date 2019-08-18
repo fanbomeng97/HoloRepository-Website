@@ -7,3 +7,12 @@ footer {
   transition: box-shadow 0.5s ease, padding 0.5s ease;
   text-align: center;
 }
+
+#image{
+  width: 814px;
+  height: 58.5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}

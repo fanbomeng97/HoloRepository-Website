@@ -6,13 +6,7 @@ class SharedFooter extends Component {
     render() {
         return (
             <footer>
-                <Image src= "Images/logos.png" style={{
-                    width: '814px',
-                    height: '58.5px',
-                    display: 'block',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    marginBottom: '2em'}}/>
+                <Image src= "Images/logos.png" id = "image"/>
                 <div>Copyright (C) 2019 University College London</div>
                 <div>
                     Read our{" "}

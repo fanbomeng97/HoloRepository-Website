@@ -8,7 +8,9 @@ import {
     Grid,
     Container,
     Button,
-    Icon
+    Icon,
+    Label,
+    List
 } from "semantic-ui-react";
 import {Link} from "react-router-dom";
 import { isBrowser, isTablet } from "react-device-detect";
@@ -62,47 +64,80 @@ class HomePage extends Component {
                         <Grid container stackable verticalAlign='middle'>
                             <Grid.Row>
                                 <Grid.Column width={8}>
-                                    <Header as='h3' style={{ fontSize: '2em' }}>
-                                        HoloRepository UI
-                                    </Header>
-                                    <p style={{ fontSize: '1.1em' }}>
+                                    <List horizontal style={{ marginBottom: 20}}>
+                                        <List.Item>
+                                            <Label circular style={{ backgroundColor: '#ffc375'}}>
+                                            </Label>
+                                        </List.Item>
+                                        <List.Item>
+                                            <Header as='h3' style={{ fontSize: '2em', fontWeight: 'normal'}}>
+                                                HoloRepository UI
+                                            </Header>
+                                        </List.Item>
+                                    </List>
+                                    <p style={{ fontSize: '1.1em', color: '#646464'}}>
                                         A web-based application that allows practitioners to browse their patients and manage the
                                         generation of 3D models sourced from imaging studies like CT or MRI scans. The client-side
                                         application is accompanied by an API server that is responsible for communicating with the
                                         other components.
                                     </p>
-                                    <Header as='h3' style={{ fontSize: '2em' }}>
-                                        HoloStorage and Accessor
-                                    </Header>
-                                    <p style={{ fontSize: '1.1em' }}>
+                                    <List horizontal style={{ marginTop: 20, marginBottom: 20}}>
+                                        <List.Item>
+                                            <Label circular style={{ backgroundColor: '#8bbfe7'}}>
+                                            </Label>
+                                        </List.Item>
+                                        <List.Item>
+                                            <Header as='h3' style={{ fontSize: '2em', fontWeight: 'normal' }}>
+                                                HoloStorage and Accessor
+                                            </Header>
+                                        </List.Item>
+                                    </List>
+                                    <p style={{ fontSize: '1.1em', color: '#646464'}}>
                                         A cloud-based storage for medical 3D models and associated metadata. Entirely hosted on
                                         Microsoft Azure, a FHIR server stores the structured medical data and a Blob Storage server
                                         provides for the binary holographic data.
                                     </p>
-                                    <p style={{ fontSize: '1.1em' }}>
+                                    <p style={{ fontSize: '1.1em', color: '#646464'}}>
                                         An enhanced facade, offering a consistent interface to the HoloStorage and translating
                                         the public REST API to internal FHIR queries. To facilitate development of 3rd party
                                         components, the interface comes with an interactive OpenAPI documentation.
                                     </p>
                                 </Grid.Column>
+
                                 <Grid.Column floated='right' width={8}>
-                                    <Header as='h3' style={{ fontSize: '2em' }}>
-                                        HoloPipelines
-                                    </Header>
-                                    <p style={{ fontSize: '1.1em' }}>
+                                    <List horizontal style={{ marginBottom: 20}}>
+                                        <List.Item>
+                                            <Label circular style={{ backgroundColor: '#a9dc7f' }}>
+                                            </Label>
+                                        </List.Item>
+                                        <List.Item>
+                                            <Header as='h3' style={{ fontSize: '2em', fontWeight: 'normal'}}>
+                                                HoloPipelines
+                                            </Header>
+                                        </List.Item>
+                                    </List>
+                                    <p style={{ fontSize: '1.1em', color: '#646464'}}>
                                         A cloud-based service that performs the automatic generation of 3D models from 2D image
                                         stacks. Pre-trained neural network models are deployed and accessed with this component
                                         alongside traditional techniques like Hounsfield value thresholding.
                                     </p>
-                                    <Header as='h3' style={{ fontSize: '2em' }}>
-                                        HoloLens App and StorageConnector
-                                    </Header>
-                                    <p style={{ fontSize: '1.1em' }}>
+                                    <List horizontal style={{ marginTop: 20, marginBottom: 20}}>
+                                        <List.Item>
+                                            <Label circular style={{ backgroundColor: '#d1bcd2'}}>
+                                            </Label>
+                                        </List.Item>
+                                        <List.Item>
+                                            <Header as='h3' style={{ fontSize: '2em', fontWeight: 'normal' }}>
+                                                HoloLens App and StorageConnector
+                                            </Header>
+                                        </List.Item>
+                                    </List>
+                                    <p style={{ fontSize: '1.1em', color: '#646464'}}>
                                         A simple application that demonstrates how to dynamically access 3D models stored in the
                                         HoloStorage. The scenes can be distributed alongside the Connector library and serve as
                                         examples and interactive documentation.
                                     </p>
-                                    <p style={{ fontSize: '1.1em' }}>
+                                    <p style={{ fontSize: '1.1em', color: '#646464'}}>
                                         A Unity library handling the runtime network connections from HoloLens applications to
                                         the HoloStorage. Distributed as a separate UnityPackage, this is meant to facilitate
                                         development of 3rd party applications that plug into the HoloRepository ecosystem.

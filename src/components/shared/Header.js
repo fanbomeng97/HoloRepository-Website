@@ -6,7 +6,6 @@ import {
     Container
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import "./Header.css";
 import { isBrowser, isTablet } from "react-device-detect";
 
 class SharedHeader extends Component {
@@ -23,7 +22,7 @@ class SharedHeader extends Component {
         const { activeItem } = this.state;
 
         return (
-            <Menu fixed='top' id = "menu" pointing secondary size='huge'>
+            <Menu fixed='top' style={{ backgroundColor: '#ffffff'}} pointing secondary size='huge'>
                 <Container >
                     {isBrowser || isTablet ? (
                         <Menu.Item as={Link} to="/home" style={{ padding: '1em 2em'}}>
@@ -53,13 +52,13 @@ class SharedHeader extends Component {
                     </Menu.Item>
 
                     <Menu.Item
-                        name='Group members'
-                        active={activeItem === 'Group members'}
+                        name='Team'
+                        active={activeItem === 'Team'}
                         onClick={this.handleItemClick}
-                        as={Link} to="/group"
+                        as={Link} to="/Team"
                     >
                         <Icon name = "users"/>
-                        {isBrowser || isTablet ? "Group Members" : ""}
+                        {isBrowser || isTablet ? "Team" : ""}
                     </Menu.Item>
 
                     <Menu.Item
