@@ -89,7 +89,7 @@ class TeamPage extends Component {
                                             <p id = "common"><b>Responsible for: </b>HoloRepository UI</p>
                                             <p id = "common"><b>Email:</b> niels.boecker.18@ucl.ac.uk</p>
                                         </Grid.Column>
-                                    </Grid.Row> : ''}id = "common"
+                                    </Grid.Row> : ''}
                                 {isMobile ? <Divider /> : ''}
 
                                 <Grid.Row>
@@ -120,7 +120,7 @@ class TeamPage extends Component {
                                         </Grid.Column> : ''}
                                 </Grid.Row>
                                 {isMobile ? <Divider /> : ''}
-                                {isMobile ?  <Grid.Row>id = "common"
+                                {isMobile ?  <Grid.Row>
                                     <Grid.Column width={3}>
                                         <Image src='https://react.semantic-ui.com/images/wireframe/image.png' circular/>
                                     </Grid.Column>

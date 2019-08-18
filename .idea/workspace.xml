@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0521d31e-1154-4f66-bb89-1489f1e2807f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/IntroPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IntroPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TeamPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TeamPage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -34,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/TeamPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2015">
-              <caret line="114" column="60" lean-forward="true" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="60" />
+            <state relative-caret-position="361">
+              <caret line="34" column="64" lean-forward="true" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -46,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/IntroPage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
@@ -140,8 +140,8 @@
         <option value="$PROJECT_DIR$/src/components/shared/Footer.css" />
         <option value="$PROJECT_DIR$/src/components/HomePage.js" />
         <option value="$PROJECT_DIR$/src/components/FontStyle.css" />
-        <option value="$PROJECT_DIR$/src/components/TeamPage.js" />
         <option value="$PROJECT_DIR$/src/components/IntroPage.js" />
+        <option value="$PROJECT_DIR$/src/components/TeamPage.js" />
       </list>
     </option>
   </component>
@@ -278,12 +278,12 @@
       <workItem from="1566088847115" duration="1143000" />
       <workItem from="1566131684376" duration="1152000" />
       <workItem from="1566132943876" duration="241000" />
-      <workItem from="1566135737780" duration="11421000" />
+      <workItem from="1566135737780" duration="11570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65822000" />
+    <option name="totallyTimeSpent" value="65971000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -423,16 +423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TeamPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2015">
-          <caret line="114" column="60" lean-forward="true" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/FontStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -468,6 +458,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TeamPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="34" column="64" lean-forward="true" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
