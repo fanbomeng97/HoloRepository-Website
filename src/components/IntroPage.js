@@ -17,7 +17,6 @@ class IntroPage extends Component {
                 <SharedHeader activeItem='Introduction'/>
                     <Header
                         textAlign='center'
-                        as='h1'
                         content='Introduction'
                         style={{
                             fontSize: '4em',
@@ -29,11 +28,11 @@ class IntroPage extends Component {
                     <Container textAlign='justified'>
                         <Grid container stackable verticalAlign='middle'>
                             <Grid.Column width={16}>
-                                <Header as='h3' style={{ fontSize: '2em' }}>
+                                <Header id = "normal_2">
                                     Background
                                 </Header>
 
-                                <p style={{ fontSize: '1.2em' }}>
+                                <p id = "common">
                                     Recent technical advancements in the realm of augmented reality (AR) and the availability
                                     of consumer head-mounted display (HMD) devices such as the Microsoft HoloLens have opened
                                     a wealth of opportunities for healthcare applications, particularly in medical imaging.
@@ -45,7 +44,7 @@ class IntroPage extends Component {
                                     or conversion to polygonal models.
                                 </p>
 
-                                <p style={{ fontSize: '1.2em' }}>
+                                <p id = "common">
                                     Neural networks can help automate many tedious tasks and are increasingly used in medical
                                     imaging. Architectures such as the 3D U-Net [6] generate models which autonomously create
                                     segmentation maps, even with relatively little training data. However, translating these
@@ -54,7 +53,7 @@ class IntroPage extends Component {
                                     Furthermore, different operating systems, software packages and dependencies obstruct
                                     successful usage [7].
                                 </p>
-                                <p style={{ fontSize: '1.2em' }}>
+                                <p id = "common">
                                     With the HoloRepository project, we intend to build the technical base for a seamless
                                     workflow that allows practitioners to generate 3D models from imaging studies and access
                                     them in an AR setting with as little manual involvement as possible. Pre-trained neural
@@ -64,56 +63,56 @@ class IntroPage extends Component {
                                     will connect the 3D models with existing patient health records.
                                 </p>
 
-                                <Header as='h3' style={{ fontSize: '2em' }}>
+                                <Header id = "normal_2">
                                     HoloRepositoryUI
                                 </Header>
-                                <p style={{ fontSize: '1.2em' }}>
+                                <p id = "common">
                                     A web-based application that allows practitioners to browse their patients and manage the
                                     generation of 3D models sourced from imaging studies like CT or MRI scans. The client-side
                                     application is accompanied by an API server that is responsible for communicating with the
                                     other components.
                                 </p>
                                 <Divider />
-                                <Header as='h3' style={{ fontSize: '2em' }}>
+                                <Header id = "normal_2">
                                     HoloPipelines
                                 </Header>
-                                <p style={{ fontSize: '1.2em' }}>
+                                <p id = "common">
                                     A cloud-based service that performs the automatic generation of 3D models from 2D image
                                     stacks. Pre-trained neural network models are deployed and accessed with this component
                                     alongside traditional techniques like Hounsfield value thresholding.
                                 </p>
                                 <Divider />
-                                <Header as='h3' style={{ fontSize: '2em' }}>
+                                <Header id = "normal_2">
                                     HoloStorage
                                 </Header>
-                                <p style={{ fontSize: '1.2em' }}>
+                                <p id = "common">
                                     A cloud-based storage for medical 3D models and associated metadata. Entirely hosted on
                                     Microsoft Azure, a FHIR server stores the structured medical data and a Blob Storage server
                                     provides for the binary holographic data.
                                 </p>
                                 <Divider />
-                                <Header as='h3' style={{ fontSize: '2em' }}>
+                                <Header id = "normal_2">
                                     HoloStorageAccessor
                                 </Header>
-                                <p style={{ fontSize: '1.2em' }}>
+                                <p id = "common">
                                     An enhanced facade, offering a consistent interface to the HoloStorage and translating
                                     the public REST API to internal FHIR queries. To facilitate development of 3rd party
                                     components, the interface comes with an interactive OpenAPI documentation.
                                 </p>
                                 <Divider />
-                                <Header as='h3' style={{ fontSize: '2em' }}>
+                                <Header id = "normal_2">
                                     HoloStorageConnector
                                 </Header>
-                                <p style={{ fontSize: '1.2em' }}>
+                                <p id = "common">
                                     A Unity library handling the runtime network connections from HoloLens applications to
                                     the HoloStorage. Distributed as a separate UnityPackage, this is meant to facilitate
                                     development of 3rd party applications that plug into the HoloRepository ecosystem.
                                 </p>
                                 <Divider />
-                                <Header as='h3' style={{ fontSize: '2em' }}>
+                                <Header id = "normal_2">
                                     HoloRepository demo application
                                 </Header>
-                                <p style={{ fontSize: '1.2em' }}>
+                                <p id = "common">
                                     A simple application that demonstrates how to dynamically access 3D models stored in the
                                     HoloStorage. The scenes can be distributed alongside the Connector library and serve as
                                     examples and interactive documentation.

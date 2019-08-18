@@ -12,7 +12,5 @@ footer {
   width: 814px;
   height: 58.5px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2em;
+  margin: auto auto 2em;
 }

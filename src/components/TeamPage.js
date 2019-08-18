@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SharedHeader from "./shared/Header";
 import SharedFooter from "./shared/Footer";
+import "./FontStyle.css";
 import {
     Header,
     Segment,
@@ -9,6 +10,7 @@ import {
     Divider,
     Container
 } from "semantic-ui-react";
+import { isBrowser, isTablet,isMobile } from "react-device-detect";
 
 class TeamPage extends Component {
     render() {
@@ -38,66 +40,99 @@ class TeamPage extends Component {
                                         <Image src= "Images/niels.jpg" circular/>
                                     </Grid.Column>
                                     <Grid.Column width={13}>
-                                        <Header as='h3' style={{ fontSize: '2em' }}>
+                                        <Header id = "normal_2">
                                             Boecker, Niels
                                         </Header>
-                                        <p style={{ fontSize: '1.2em' }}><b>Team leader</b></p>
-                                        <p style={{ fontSize: '1.2em' }}><b>Responsible for: </b>HoloRepository UI</p>
-                                        <p style={{ fontSize: '1.2em' }}><b>Email:</b> niels.boecker.18@ucl.ac.uk</p>
+                                        <p id = "common"><b>Team leader</b></p>
+                                        <p id = "common" ><b>Responsible for: </b>HoloRepository UI</p>
+                                        <p id = "common"><b>Email:</b> niels.boecker.18@ucl.ac.uk</p>
                                     </Grid.Column>
                                 </Grid.Row>
-
                                 <Divider />
-
                                 <Grid.Row>
                                     <Grid.Column width={3}>
                                         <Image src= "Images/wenjie.png" circular/>
                                     </Grid.Column>
-                                    <Grid.Column width={5}>
-                                        <Header as='h3' style={{ fontSize: '2em' }}>
+                                    <Grid.Column width={isBrowser ? 5 : 13}>
+                                        <Header id = "normal_2">
                                             Boon, Wenjie
                                         </Header>
-                                        <p style={{ fontSize: '1.2em' }}><b>Team member</b></p>
-                                        <p style={{ fontSize: '1.2em' }}><b>Responsible for: </b>HoloStorage and Accessor</p>
-                                        <p style={{ fontSize: '1.2em' }}><b>Email:</b> wenjie.boon.18@ucl.ac.uk</p>
+                                        <p id = "common"><b>Team member</b></p>
+                                        <p id = "common"><b>Responsible for: </b>HoloStorage and Accessor</p>
+                                        <p id = "common"><b>Email:</b> wenjie.boon.18@ucl.ac.uk</p>
                                     </Grid.Column>
-                                    <Grid.Column width={3}>
-                                        <Image src='https://react.semantic-ui.com/images/wireframe/image.png' circular/>
-                                    </Grid.Column>
-                                    <Grid.Column width={5}>
-                                        <Header as='h3' style={{ fontSize: '2em' }}>
-                                            Boonyaprasert, Udomkarn
-                                        </Header>
-                                        <p style={{ fontSize: '1.2em' }}><b>Team member</b></p>
-                                        <p style={{ fontSize: '1.2em' }}><b>Responsible for: </b>HoloPipelines</p>
-                                        <p style={{ fontSize: '1.2em' }}><b>Email:</b> udomkarn.boonyaprasert.17@ucl.ac.uk</p>
-                                    </Grid.Column>
+                                    {isBrowser ?
+                                        <Grid.Column width={3}>
+                                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' circular/>
+                                        </Grid.Column>: ''}
+                                    {isBrowser ?
+                                        <Grid.Column width={5}>
+                                            <Header id = "normal_2">
+                                                Boonyaprasert, Udomkarn
+                                            </Header>
+                                            <p id = "common"><b>Team member</b></p>
+                                            <p id = "common"><b>Responsible for: </b>HoloPipelines</p>
+                                            <p id = "common"><b>Email:</b> udomkarn.boonyaprasert.17@ucl.ac.uk</p>
+                                        </Grid.Column>: ''}
                                 </Grid.Row>
                                 <Divider />
+                                {isMobile ?
+                                    <Grid.Row>
+                                        <Grid.Column width={3}>
+                                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' circular/>
+                                        </Grid.Column>
+                                        <Grid.Column width={13}>
+                                            <Header id = "normal_2">
+                                                Boonyaprasert, Udomkarn
+                                            </Header>
+                                            <p id = "common"><b>Team leader</b></p>
+                                            <p id = "common"><b>Responsible for: </b>HoloRepository UI</p>
+                                            <p id = "common"><b>Email:</b> niels.boecker.18@ucl.ac.uk</p>
+                                        </Grid.Column>
+                                    </Grid.Row> : ''}id = "common"
+                                {isMobile ? <Divider /> : ''}
+
                                 <Grid.Row>
                                     <Grid.Column width={3}>
                                         <Image src= "Images/fanbo.png" circular/>
                                     </Grid.Column>
-                                    <Grid.Column width={5}>
-                                        <Header as='h3' style={{ fontSize: '2em' }}>
+                                    <Grid.Column width={isBrowser ? 5 : 13}>
+                                        <Header id = "normal_2">
                                             Meng, Fanbo
                                         </Header>
-                                        <p style={{ fontSize: '1.2em' }}><b>Team member</b></p>
-                                        <p style={{ fontSize: '1.2em' }}><b>Responsible for: </b>HoloLens App and StorageConnector</p>
-                                        <p style={{ fontSize: '1.2em' }}><b>Email:</b> fanbo.meng.18@ucl.ac.uk</p>
+                                        <p id = "common"><b>Team member</b></p>
+                                        <p id = "common"><b>Responsible for: </b>HoloLens App and StorageConnector</p>
+                                        <p id = "common"><b>Email:</b> fanbo.meng.18@ucl.ac.uk</p>
                                     </Grid.Column>
+
+                                    {isBrowser ?
+                                        <Grid.Column width={3}>
+                                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' circular/>
+                                        </Grid.Column> : ''}
+                                    {isBrowser ?
+                                        <Grid.Column width={5}>
+                                            <Header id = "normal_2">
+                                                Wong, Ka Wai
+                                            </Header>
+                                            <p id = "common"><b>Team member</b></p>
+                                            <p id = "common"><b>Responsible for: </b>HoloPipelines</p>
+                                            <p id = "common"><b>Email:</b> ka.wong.18@ucl.ac.uk</p>
+                                        </Grid.Column> : ''}
+                                </Grid.Row>
+                                {isMobile ? <Divider /> : ''}
+                                {isMobile ?  <Grid.Row>id = "common"
                                     <Grid.Column width={3}>
                                         <Image src='https://react.semantic-ui.com/images/wireframe/image.png' circular/>
                                     </Grid.Column>
-                                    <Grid.Column width={5}>
-                                        <Header as='h3' style={{ fontSize: '2em' }}>
+                                    <Grid.Column width={13}>
+                                        <Header id = "normal_2">
                                             Wong, Ka Wai
                                         </Header>
-                                        <p style={{ fontSize: '1.2em' }}><b>Team member</b></p>
-                                        <p style={{ fontSize: '1.2em' }}><b>Responsible for: </b>HoloPipelines</p>
-                                        <p style={{ fontSize: '1.2em' }}><b>Email:</b> ka.wong.18@ucl.ac.uk</p>
+                                        <p id = "common"><b>Team member</b></p>
+                                        <p id = "common"><b>Responsible for: </b>HoloPipelines</p>
+                                        <p id = "common"><b>Email:</b> ka.wong.18@ucl.ac.uk</p>
                                     </Grid.Column>
-                                </Grid.Row>
+                                </Grid.Row>: ''}
                             </Grid>
                         </Container>
                 </Segment>
