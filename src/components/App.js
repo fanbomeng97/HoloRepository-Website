@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import HomePage from "./HomePage";
 import GroupMemberPage from "./GroupMemberPage";
 import IntroPage from "./IntroPage";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
     render() {
         return (
             <div>
-                <BrowserRouter>
+                <HashRouter>
                     <Switch>
                         <Route
                             exact
@@ -32,7 +32,7 @@ class App extends Component {
                             render={() => (<GroupMemberPage/>)}
                         />
                     </Switch>
-                </BrowserRouter>
+                </HashRouter>
             </div>
         );
     }

@@ -7,6 +7,7 @@ import {
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import { isBrowser, isTablet } from "react-device-detect";
 
 class SharedHeader extends Component {
     constructor(props) {
@@ -24,10 +25,13 @@ class SharedHeader extends Component {
         return (
             <Menu fixed='top' id = "menu" pointing secondary size='huge'>
                 <Container >
-                    <Menu.Item as={Link} to="/home" style={{ padding: '1em 2em'}}>
-                        <Image src="Images/logo_with_title.png" size = "small"/>
-                    </Menu.Item>
-
+                    {isBrowser || isTablet ? (
+                        <Menu.Item as={Link} to="/home" style={{ padding: '1em 2em'}}>
+                            <Image src="Images/logo_with_title.png" size = "small"/>
+                        </Menu.Item>
+                    ) : (
+                        ""
+                    )}
                     <Menu.Item
                         name='Home'
                         active={activeItem === 'Home'}
@@ -35,7 +39,7 @@ class SharedHeader extends Component {
                         as={Link} to="/home"
                     >
                         <Icon name = "home"/>
-                        {"Home"}
+                        {isBrowser || isTablet ? "Home" : ""}
                     </Menu.Item>
 
                     <Menu.Item
@@ -45,7 +49,7 @@ class SharedHeader extends Component {
                         as={Link} to="/intro"
                     >
                         <Icon name = "list ul"/>
-                        {"Introduction"}
+                        {isBrowser || isTablet ? "Introduction" : ""}
                     </Menu.Item>
 
                     <Menu.Item
@@ -55,7 +59,7 @@ class SharedHeader extends Component {
                         as={Link} to="/groupmember"
                     >
                         <Icon name = "users"/>
-                        {"Group Members"}
+                        {isBrowser || isTablet ? "Group Members" : ""}
                     </Menu.Item>
 
                     <Menu.Item
@@ -67,7 +71,7 @@ class SharedHeader extends Component {
                         position = 'right'
                     >
                         <Icon name = "github"/>
-                        {"GitHub"}
+                        {isBrowser || isTablet ? "GitHub" : ""}
                     </Menu.Item>
                 </Container>
             </Menu>

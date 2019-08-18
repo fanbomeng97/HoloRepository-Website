@@ -11,6 +11,7 @@ import {
     Icon
 } from "semantic-ui-react";
 import {Link} from "react-router-dom";
+import { isBrowser, isTablet } from "react-device-detect";
 
 class HomePage extends Component {
     render() {
@@ -31,7 +32,7 @@ class HomePage extends Component {
                         height: 700}}>
                         <Container textAlign='center'>
                             <p style={{
-                                    fontSize: '6em',
+                                    fontSize: isBrowser || isTablet ? '6em' : '3em',
                                     fontWeight: 'normal',
                                     color: 'white',
                                     marginTop: 150
@@ -39,7 +40,7 @@ class HomePage extends Component {
                                 HoloRepository
                             </p>
                             <p style={{
-                                    fontSize: '1.8em',
+                                    fontSize: isBrowser || isTablet ? '1.8em' : '1.2em',
                                     fontWeight: 'normal',
                                     color: 'white'
 
