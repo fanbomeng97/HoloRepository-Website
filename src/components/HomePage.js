@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import SharedHeader from "./shared/Header";
 import SharedFooter from "./shared/Footer";
-import BackgroundImage from "../images/background.jpg";
+import BackgroundImage from "../images/background.png";
 import "./FontStyle.css";
 import {
     Header,
@@ -11,8 +11,8 @@ import {
     Button,
     Icon,
     Label,
-    List,
-    Image
+    Image,
+    Divider
 } from "semantic-ui-react";
 import {Link} from "react-router-dom";
 import { isBrowser, isTablet } from "react-device-detect";
@@ -62,20 +62,13 @@ class HomePage extends Component {
 
                 <Segment style={{ padding: '5em 0em' }} vertical >
                     <Container textAlign='justified'>
-                        <Grid container stackable >
+                        <Grid container stackable verticalAlign='middle'>
                             <Grid.Row>
                                 <Grid.Column width={8}>
-                                    <List horizontal style={{ marginBottom: 20}}>
-                                        <List.Item>
-                                            <Label circular style={{ backgroundColor: '#ffc375'}}>
-                                            </Label>
-                                        </List.Item>
-                                        <List.Item>
-                                            <Header as='h3' style={{ fontSize: isBrowser ? '2em' : '1.3em', fontWeight: 'normal' }}>
-                                                HoloRepository UI
-                                            </Header>
-                                        </List.Item>
-                                    </List>
+                                    <Header style={{ fontSize: isBrowser ? '3em' : '1.3em', fontWeight: 'normal' }}>
+                                        <Label circular style={{ backgroundColor: '#ffc375'}}/>
+                                        {"  HoloRepository UI"}
+                                    </Header>
                                     <p id = "grayFont">
                                         A web-based application that allows practitioners to browse their patients and manage the
                                         generation of 3D models sourced from imaging studies like CT or MRI scans. The client-side
@@ -84,26 +77,19 @@ class HomePage extends Component {
                                     </p>
                                 </Grid.Column>
                                 <Grid.Column width={8} align='middle'>
-                                    <Image src= "Images/ui.png" />
+                                    <Image src= "Images/ui.png" size = 'large'/>
                                 </Grid.Column>
                             </Grid.Row>
-
-                            <Grid.Row>
-                                <Grid.Column width={8} align='middle'>
-                                    <Image src= "Images/pipeline.png" />
+                            <Divider/>
+                            <Grid.Row style={{ marginBottom: 20}}>
+                                <Grid.Column width={8} align='middle' >
+                                    <Image src= "Images/pipeline.png" size = 'large'/>
                                 </Grid.Column>
                                 <Grid.Column width={8}>
-                                    <List horizontal style={{ marginBottom: 20}}>
-                                        <List.Item>
-                                            <Label circular style={{ backgroundColor: '#a9dc7f' }}>
-                                            </Label>
-                                        </List.Item>
-                                        <List.Item>
-                                            <Header as='h3' style={{ fontSize: isBrowser ? '2em' : '1.3em', fontWeight: 'normal' }}>
-                                                HoloPipelines
-                                            </Header>
-                                        </List.Item>
-                                    </List>
+                                    <Header style={{ fontSize: isBrowser ? '3em' : '1.3em', fontWeight: 'normal', }}>
+                                        <Label circular style={{ backgroundColor: '#a9dc7f' }}/>
+                                        {"  HoloPipelines"}
+                                    </Header>
                                     <p id = "grayFont">
                                         A cloud-based service that performs the automatic generation of 3D models from 2D image
                                         stacks. Pre-trained neural network models are deployed and accessed with this component
@@ -111,20 +97,13 @@ class HomePage extends Component {
                                     </p>
                                 </Grid.Column>
                             </Grid.Row>
-
+                            <Divider/>
                             <Grid.Row>
                                 <Grid.Column width={8}>
-                                    <List horizontal style={{ marginTop: 20, marginBottom: 20}}>
-                                        <List.Item>
-                                            <Label circular style={{ backgroundColor: '#8bbfe7'}}>
-                                            </Label>
-                                        </List.Item>
-                                        <List.Item>
-                                            <Header as='h3' style={{ fontSize: isBrowser ? '2em' : '1.3em', fontWeight: 'normal' }}>
-                                                HoloStorage and Accessor
-                                            </Header>
-                                        </List.Item>
-                                    </List>
+                                    <Header style={{ fontSize: isBrowser ? '3em' : '1.3em', fontWeight: 'normal' }}>
+                                        <Label circular style={{ backgroundColor: '#8bbfe7'}}/>
+                                        {"  HoloStorage and Accessor"}
+                                    </Header>
                                     <p id = "grayFont">
                                         A cloud-based storage for medical 3D models and associated metadata. Entirely hosted on
                                         Microsoft Azure, a FHIR server stores the structured medical data and a Blob Storage server
@@ -137,26 +116,19 @@ class HomePage extends Component {
                                     </p>
                                 </Grid.Column>
                                 <Grid.Column width={8} align='middle'>
-                                    <Image src= "Images/accessor.png" />
+                                    <Image src= "Images/accessor.png" size = 'large'/>
                                 </Grid.Column>
                             </Grid.Row>
-
+                            <Divider/>
                             <Grid.Row>
                                 <Grid.Column width={8} align='middle'>
-                                    <Image src= "Images/lens.png" />
+                                    <Image src= "Images/lens.png" size = 'large'/>
                                 </Grid.Column>
                                 <Grid.Column width={8}>
-                                    <List horizontal style={{ marginTop: 20, marginBottom: 20}}>
-                                        <List.Item>
-                                            <Label circular style={{ backgroundColor: '#d1bcd2'}}>
-                                            </Label>
-                                        </List.Item>
-                                        <List.Item>
-                                            <Header as='h3' style={{ fontSize: isBrowser ? '2em' : '1.3em', fontWeight: 'normal' }}>
-                                                HoloLens App and StorageConnector
-                                            </Header>
-                                        </List.Item>
-                                    </List>
+                                    <Header style={{ fontSize: isBrowser ? '3em' : '1.3em', fontWeight: 'normal' }}>
+                                        <Label circular style={{ backgroundColor: '#d1bcd2'}}/>
+                                        {" HoloLens App and Storage Connector"}
+                                    </Header>
                                     <p id = "grayFont">
                                         A simple application that demonstrates how to dynamically access 3D models stored in the
                                         HoloStorage. The scenes can be distributed alongside the Connector library and serve as
