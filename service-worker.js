@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/HoloRepository-Website/precache-manifest.31b24944e7c922b767cd17c0cfd98200.js"
+  "/HoloRepository-Website/precache-manifest.0c89621636709cc6c96e46c386cfd3b0.js"
 );
 
 self.addEventListener('message', (event) => {
