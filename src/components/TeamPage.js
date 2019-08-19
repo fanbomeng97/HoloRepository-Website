@@ -96,9 +96,9 @@ class TeamPage extends Component {
                                             <Header id = "normal_2">
                                                 Boonyaprasert, Udomkarn
                                             </Header>
-                                            <p id = "common"><b>Team leader</b></p>
-                                            <p id = "common"><b>Responsible for: </b>HoloRepository UI</p>
-                                            <p id = "common"><b>Email:</b> niels.boecker.18@ucl.ac.uk</p>
+                                            <p id = "common"><b>Team member</b></p>
+                                            <p id = "common"><b>Responsible for: </b>HoloPipelines</p>
+                                            <p id = "common"><b>Email:</b> udomkarn.boonyaprasert.17@ucl.ac.uk</p>
                                         </Grid.Column>
                                     </Grid.Row> : ''}
                                 {isMobile ? <Divider /> : ''}

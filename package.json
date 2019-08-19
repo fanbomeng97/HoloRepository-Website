@@ -4,11 +4,13 @@
   "private": true,
   "homepage": "http://fanbomeng97.github.io/HoloRepository-Website",
   "dependencies": {
+    "markdown-to-jsx": "^6.10.3",
     "react": "^16.9.0",
     "react-device-detect": "^1.7.5",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1",
+    "react-syntax-highlighter": "^11.0.2",
     "semantic-ui-react": "^0.87.3"
   },
   "scripts": {
