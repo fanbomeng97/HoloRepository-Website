@@ -4,7 +4,7 @@ A web-based application that allows practitioners to browse their patients and m
 
 ## Description
 
-<img src="https://user-images.githubusercontent.com/11090412/62010806-49d5b180-b167-11e9-8be4-24958650d228.png" alt="screenshot" height="350" align="left" />
+<img src="https://user-images.githubusercontent.com/11090412/62010806-49d5b180-b167-11e9-8be4-24958650d228.png" alt="screenshot" width="35%" align="left" />
 
 HoloRepositoryUI is intended to be the main interface for practitioners to browse their patients, preview imaging studies such as CT or MRI scans, and trigger the automatic generation of 3D models sourced from the scans in the HoloPipelines.
 
@@ -130,6 +130,7 @@ Jest provides a couple of advanced features, for instance you can generate a cov
 To build the software locally, run
 
 <div style="background-color:#f4f4f4">
+<div style="overflow-x: scroll" width = "100%">
 ```shell
  # compile and run server in production mode
  cd server
@@ -141,13 +142,15 @@ To build the software locally, run
  npm run build
 ```
 </div>
+</div>
 
 ### Building and running the docker images
 
 Note that the actual deployment leverages Docker. A `Dockerfile` is provided for both client and server and the typical development workflow uses Azure DevOps pipelines to build and release the app.
 
-<div style="background-color:#f4f4f4" width = "100%">
-```shell
+<div style="background-color:#f4f4f4" width = "100%"> 
+<div style="overflow-x: scroll" width = "100%">
+```
  # client
  docker build \
      --build-arg REACT_APP_BACKEND_HOST=http://localhost \
@@ -164,7 +167,8 @@ Note that the actual deployment leverages Docker. A `Dockerfile` is provided for
  # test connections
  echo "Testing client" && curl http://localhost:3000/app/
  echo "Testing server" && curl http://localhost:3001/api/v1/patients
-```
+ ```
+</div>
 </div>
 
 Note that the `Dockerfile`s are specified independently of the build context through the `-f` flag. This is necessary in order to copy `./types`, which would otherwise cause an error as it is outside the default build context. The build context therefore needs to be this parent directory.

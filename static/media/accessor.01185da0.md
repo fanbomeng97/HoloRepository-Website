@@ -4,7 +4,7 @@ The HoloStorage is a cloud-based storage for medical 3D models and associated me
 
 ## Description
 
-<img src="https://user-images.githubusercontent.com/11090412/62010808-49d5b180-b167-11e9-9ce7-7335aa616926.png" alt="screenshot" height="350" align="left" />
+<img src="https://user-images.githubusercontent.com/11090412/62010808-49d5b180-b167-11e9-9ce7-7335aa616926.png" alt="screenshot" width="35%" align="left" />
 To protect the HoloStorage and hide concrete implementation details, such as which FHIR resources are used to store data internally, the HoloStorage-Accessor provides a consistent and unified interface to the data, and the single entry-point for 3rd party systems. As such, it acts as a façade. However, it also performs some more complex business logic, like translating calls to a minimalistic interface to FHIR queries and building complex queries, potentially filtering and aggregating results.
 
 The REST API is being carefully designed, so that it not only satisfies the requirements of the HoloPipelines’ artefacts, but also supports adjacent projects (DepthVisor, Annotator) and any future projects in this context. We strive to find a balance between an open, generic interface and enforcing enough relevant data to effectively query and utilise the data.
@@ -41,9 +41,11 @@ To install program dependencies
 To run the server, first configure the necessary [configurations](#configuration) then run the following
 
 <div style="background-color:#f4f4f4">
+<div style="overflow-x: scroll" width = "100%">
 ```
  go run cmd/holo-storage-accessor/main.go
 ```
+</div>
 </div>
 
 Verify the accessor by visiting `localhost:3200/api/1.0.0` or `localhost:3200/api/1.0.0/ui`
@@ -67,17 +69,21 @@ Import them into [postman](https://www.getpostman.com/) and run through them.
 To run the server in a docker container
 
 <div style="background-color:#f4f4f4">
+<div style="overflow-x: scroll" width = "100%">
 ```
  docker build -t holo-storage-accessor .
 ```
+</div>
 </div>
 
 Once the image is built load the configuration, just run
 
 <div style="background-color:#f4f4f4">
+<div style="overflow-x: scroll" width = "100%">
 ```
  docker run -it --rm --env-file config.env -p 3200:3200 holo-storage-accessor
 ```
+</div>
 </div>
 
 You can then access the container via localhost:3200
@@ -89,14 +95,28 @@ If using docker, the environment configuration fields can be set via `config.env
 
 If not, `export` the variables before running the program.
 
-<div style="background-color:#f8f8f8">
-| Field                    |Description                                      |
-|--------------------------|-------------------------------------------------|
-| ACCESSOR_FHIR_URL         |URL to the FHIR server that accessor connects to |
-| AZURE_STORAGE_ACCOUNT     |Name of blob store for holograms                 |
-| AZURE_STORAGE_ACCESS_KEY  |Access key to the blob store                     |
-| ENABLE_CORS               |Enable CORS support for accessor                 |
-</div>
+<table width = "100%">
+  <tr>
+    <th style="background-color:#f0f0f0" width = "30%">Field</th>
+    <th style="background-color:#f0f0f0" width = "70%">Description</th>
+  </tr>
+  <tr>
+    <td>ACCESSOR_FHIR_URL</td>
+    <td>URL to the FHIR server that accessor connects to</td>
+  </tr>
+  <tr>
+    <td style="background-color:#f0f0f0">AZURE_STORAGE_ACCOUNT</td>
+    <td style="background-color:#f0f0f0">Name of blob store for holograms</td>
+  </tr>
+  <tr>
+    <td>AZURE_STORAGE_ACCESS_KEY</td>
+    <td>Access key to the blob store</td>
+  </tr>
+  <tr>
+    <td style="background-color:#f0f0f0">ENABLE_CORS</td>
+    <td style="background-color:#f0f0f0">Enable CORS support for accessor</td>
+  </tr>
+</table>
 
 ## Contact and support
 

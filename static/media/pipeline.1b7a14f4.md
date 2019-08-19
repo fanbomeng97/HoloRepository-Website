@@ -4,7 +4,7 @@ A cloud-based service that performs the automatic generation of 3D models from 2
 
 ## Description
 
-<img src="https://user-images.githubusercontent.com/11090412/62010807-49d5b180-b167-11e9-9ff5-cd221e94b265.png" alt="screenshot" height="350" align="left" />
+<img src="https://user-images.githubusercontent.com/11090412/62010807-49d5b180-b167-11e9-9ff5-cd221e94b265.png" alt="screenshot" width="35%" align="left" />
 The HoloPipelines are responsible for the generation of 3D holograms to eventually be displayed in the HoloLens, sourced from DICOM imaging studies. The cloud-hosted service provides a consistent pipeline interface to consume DICOM and yield glTF2 files (plus associated patient data). By implementing a Docker-based template, arbitrary pre-trained neural network (NN) models can be plugged into the HoloPipelines service seamlessly. This allows to add new workflows in the future and implement each workflow independently.
 
 A typical pipeline will process the data fully automatic by utilising a NN model which has been trained to perform a specific task, such as segmenting the bones from a CT scan. Several Docker-based interfaces for distributing pre-trained models have been suggested, for instance the ModelHub.ai scheme, Niftinet or Microsoft Azure ML. We will iteratively add adapters for these interfaces, so that the HoloPipelines can integrate existing models.
@@ -79,6 +79,7 @@ These 2 dependencies can be installed using Node.js package manager. Please make
 ### Local usage
 
 <div style="background-color:#f4f4f4">
+<div style="overflow-x: scroll" width = "100%">
 ```
  usage: pipelineController.py [-h] [-c CONFIG] [-l] [-i NAME]
                               [-p [PARAM [PARAM ...]]]
@@ -101,13 +102,16 @@ These 2 dependencies can be installed using Node.js package manager. Please make
                          threshold
 ```
 </div>
+</div>
 
 #### Example usage
 
 <div style="background-color:#f4f4f4">
+<div style="overflow-x: scroll" width = "100%">
 ```
  python pipelineController.py p4 -p 3_Axial_CE
 ```
+</div>
 </div>
 
 - `p4`: pipeline ID. In this case to segment lung and generate glb from it

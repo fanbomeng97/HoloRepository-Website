@@ -10,7 +10,7 @@ The HoloRepository is a system for transforming medical imaging studies such as 
 
 ## Description
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/11090412/62010805-49d5b180-b167-11e9-8f36-af05454f3a15.png" alt="screenshot" height="350" />
+  <img src="https://user-images.githubusercontent.com/11090412/62010805-49d5b180-b167-11e9-8f36-af05454f3a15.png" alt="screenshot" width="65%" />
 </p>
 
 To facilitate the access to the HoloStorage for 3rd party projects and future projects, we provide a library which is distributed as AssetPackage, can be imported into Unity projects and added to Scenes as a configurable GameObject. It provides a layer of abstraction for the network calls and API accesses performed to dynamically load data from the HoloStorage into HoloLens applications at runtime.
@@ -46,25 +46,25 @@ This git repository used [Git Large File Storage](https://git-lfs.github.com/) e
 Before you start to run the HoloLens App, there are some settings are required in Unity. First, if you pull the application properly from this GitHub, the menu bar should contain the MRTK option. if not, please remove the local files and pull it gain.
 
 <p align="center">
-    <img src="https://media.githubusercontent.com/media/nbckr/HoloRepository-HoloLens/dev/HoloRepositoryDemoApplication/Images/MRTK.png" height="100">
+    <img src="https://media.githubusercontent.com/media/nbckr/HoloRepository-HoloLens/dev/HoloRepositoryDemoApplication/Images/MRTK.png" width="60%">
 </p>
 
 Go to **Menu bar -> File -> Build setting**, select **Universal Windows Platform**, choose Target Device as **HoloLens**, Architecture as **x86**, Build type as **D3D**, Visual Studio Version as **Visual Studio 2017**, select the **Unity C# Projects** option in Debugging.
 
 <p align="center">
-    <img src="https://media.githubusercontent.com/media/nbckr/HoloRepository-HoloLens/dev/HoloRepositoryDemoApplication/Images/BuildSetting.png" height="550">
+    <img src="https://media.githubusercontent.com/media/nbckr/HoloRepository-HoloLens/dev/HoloRepositoryDemoApplication/Images/BuildSetting.png" width="50%">
 </p>
 
 If the Unity C# Projects option is not available, please go to **Player Settings**, and choose **.NET** as Scripting Backend in Other Settings.
 
 <p align="center">
-    <img src="https://media.githubusercontent.com/media/nbckr/HoloRepository-HoloLens/dev/HoloRepositoryDemoApplication/Images/OtherSetting.png" height="300">
+    <img src="https://media.githubusercontent.com/media/nbckr/HoloRepository-HoloLens/dev/HoloRepositoryDemoApplication/Images/OtherSetting.png" width="40%">
 </p>
 
 Meanwhile, Please select **Visual Reality Supported** in XR Settings
 
 <p align="center">
-    <img src="https://media.githubusercontent.com/media/nbckr/HoloRepository-HoloLens/dev/HoloRepositoryDemoApplication/Images/XRSettings.png" height="200">
+    <img src="https://media.githubusercontent.com/media/nbckr/HoloRepository-HoloLens/dev/HoloRepositoryDemoApplication/Images/XRSettings.png" width="40%">
 </p>
 
 ### Run the app in Game mode
@@ -78,7 +78,7 @@ Go to **Menu bar -> File -> Build setting**, before you build the application, p
 Use Visual Studio to open the generated **.sln** file, then Select an **x86** build configuration for the app, you can both select **Remote Machine** or **HoloLens Emulator** as the target device, if you select remote machine, it requires the IP address of your HoloLens to make the connection. Finally, Select **Debug -> Start debugging** to deploy your app and start debugging.
 
 <p align="center">
-    <img src="https://media.githubusercontent.com/media/nbckr/HoloRepository-HoloLens/dev/HoloRepositoryDemoApplication/Images/Deploy.png" height="200">
+    <img src="https://media.githubusercontent.com/media/nbckr/HoloRepository-HoloLens/dev/HoloRepositoryDemoApplication/Images/Deploy.png" width="40%">
 </p>
 
 The details of the deployment steps and other deploy methods are available in [microsoft mixed reality offical site](https://docs.microsoft.com/en-us/windows/mixed-reality/using-visual-studio).
