@@ -37,7 +37,7 @@ class TeamPage extends Component {
                             style={{fontSize: '4em', fontWeight: 'normal', marginTop: 75, color: '#ffffff'}}/>
                     </Segment>
                 </div>
-                <Segment vertical style={{ padding: '2em 0em', backgroundColor: '#f8f8f8'}}>
+                <Segment style={{ marginTop: 0, backgroundColor: '#f8f8f8'}}>
                     <Container textAlign='left' >
                         <Segment>
                             <Grid style={{ padding: '1em 1em'}}>

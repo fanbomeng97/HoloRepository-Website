@@ -20,6 +20,12 @@ import {
 import Markdown from 'markdown-to-jsx';
 import {isBrowser, isTablet} from "react-device-detect";
 
+const markdownStyle = {
+    padding: isBrowser || isTablet  ? '0.5em 2em':'0.5em 0.5em',
+    fontSize: isBrowser || isTablet  ? '1.1em':'0.8em',
+    fontWeight: 'normal'
+};
+
 class IntroPage extends Component {
     constructor(props) {
         super(props);
@@ -56,42 +62,42 @@ class IntroPage extends Component {
                     </Segment>
                 </div>
 
-                <Segment style={{ backgroundColor: '#f8f8f8'}} vertical>
+                <Segment style={{ marginTop: 0, backgroundColor: '#f8f8f8'}}>
                     <Grid>
                         <Grid.Row>
-                            {isBrowser || isTablet  ? <Grid.Column width= '3' /> : ''}
+                            {isBrowser ? <Grid.Column width= '3' /> : ''}
                             <Grid.Column width={isBrowser ? 10 : 16}>
                                 <Container textAlign='justified'>
                                     <Segment>
                                         <Label ribbon style={{ padding: '0.5em 1em'}}>
                                             General
                                         </Label>
-                                        <Markdown children={this.state.general} style={{ padding: '0.5em 2em', fontSize: '1.1em', fontWeight: 'normal'}}/>
+                                        <Markdown children={this.state.general} style={markdownStyle}/>
                                     </Segment>
                                     <Segment>
                                         <Label ribbon style={{ backgroundColor: '#ffc375'}}>
                                             HoloRepository UI
                                         </Label>
-                                        <Markdown children={this.state.ui} style={{ padding: '0.5em 2em', fontSize: '1.1em', fontWeight: 'normal'}}/>
+                                        <Markdown children={this.state.ui} style={markdownStyle }/>
                                     </Segment>
                                     <Segment>
                                         <Label ribbon style={{ backgroundColor: '#a9dc7f'}}>
                                             HoloPipelines
                                         </Label>
-                                        <Markdown children={this.state.pipeline} style={{ padding: '0.5em 2em', fontSize: '1.1em', fontWeight: 'normal'}}/>
+                                        <Markdown children={this.state.pipeline} style={markdownStyle}/>
                                     </Segment>
                                     <Segment>
                                         <Label ribbon style={{ backgroundColor: '#8bbfe7'}}>
                                             HoloStorage and Accessor
                                         </Label>
-                                        <Markdown children={this.state.accessor} style={{ padding: '0.5em 2em', fontSize: '1.1em', fontWeight: 'normal'}}/>
+                                        <Markdown children={this.state.accessor} style={markdownStyle}/>
                                     </Segment>
                                     <Segment>
                                         <Label ribbon style={{ backgroundColor: '#d1bcd2'}}>
                                             HoloLens App and StorageConnector
                                         </Label>
-                                        <Markdown children={this.state.hololens} style={{ padding: '0.5em 2em', fontSize: '1.1em', fontWeight: 'normal'}}/>
-                                        <Markdown children={this.state.connector} style={{ padding: '0.5em 2em', fontSize: '1.1em', fontWeight: 'normal'}}/>
+                                        <Markdown children={this.state.hololens} style={markdownStyle}/>
+                                        <Markdown children={this.state.connector} style={markdownStyle}/>
                                     </Segment>
                                     <Card fluid style={{ marginTop: '3em'}}>
                                         <Card.Content>
@@ -126,9 +132,7 @@ class IntroPage extends Component {
                             {isBrowser || isTablet  ? <Grid.Column width= '3' /> : ''}
                         </Grid.Row>
                     </Grid>
-
                 </Segment>
-
                 <SharedFooter/>
             </div>
         );

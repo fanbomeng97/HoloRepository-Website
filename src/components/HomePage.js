@@ -17,6 +17,11 @@ import {
 import {Link} from "react-router-dom";
 import { isBrowser, isTablet } from "react-device-detect";
 
+const headerStyle = {
+    fontSize: isBrowser ? '2.2em' : '1.3em',
+    fontWeight: 'normal'
+};
+
 class HomePage extends Component {
     render() {
         return (
@@ -64,7 +69,7 @@ class HomePage extends Component {
                     <Grid container stackable verticalAlign='middle' textAlign='justified'>
                         <Grid.Row>
                             <Grid.Column width={8}>
-                                <Header style={{ fontSize: isBrowser ? '2.2em' : '1.3em', fontWeight: 'normal' }}>
+                                <Header style={headerStyle}>
                                     <Label circular style={{ backgroundColor: '#ffc375', marginRight: 5}}/>
                                     {"  HoloRepository UI"}
                                 </Header>
@@ -85,7 +90,7 @@ class HomePage extends Component {
                                 <Image src= "Images/pipeline.png" size = 'large'/>
                             </Grid.Column>
                             <Grid.Column width={8}>
-                                <Header style={{ fontSize: isBrowser ? '2.2em' : '1.3em', fontWeight: 'normal', }}>
+                                <Header style={headerStyle}>
                                     <Label circular style={{ backgroundColor: '#a9dc7f', marginRight: 5 }}/>
                                     {"  HoloPipelines"}
                                 </Header>
@@ -99,7 +104,7 @@ class HomePage extends Component {
                         <Divider/>
                         <Grid.Row>
                             <Grid.Column width={8}>
-                                <Header style={{ fontSize: isBrowser ? '2.2em' : '1.3em', fontWeight: 'normal' }}>
+                                <Header style={headerStyle}>
                                     <Label circular style={{ backgroundColor: '#8bbfe7', marginRight: 5}}/>
                                     {"  HoloStorage and Accessor"}
                                 </Header>
@@ -124,7 +129,7 @@ class HomePage extends Component {
                                 <Image src= "Images/lens.png" size = 'large'/>
                             </Grid.Column>
                             <Grid.Column width={8}>
-                                <Header style={{ fontSize: isBrowser ? '2.2em' : '1.3em', fontWeight: 'normal' }}>
+                                <Header style={headerStyle}>
                                     <Label circular style={{ backgroundColor: '#d1bcd2', marginRight: 5}}/>
                                     {" HoloLens App and Storage Connector"}
                                 </Header>

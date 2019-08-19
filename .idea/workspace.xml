@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0521d31e-1154-4f66-bb89-1489f1e2807f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/IntroPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IntroPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TeamPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TeamPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/Information.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -37,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/HomePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="38" column="67" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="67" />
+            <state relative-caret-position="2147">
+              <caret line="131" column="58" selection-start-line="131" selection-start-column="58" selection-end-line="131" selection-end-column="58" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -49,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/TeamPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="86" column="59" lean-forward="true" selection-start-line="78" selection-start-column="36" selection-end-line="86" selection-end-column="59" />
+            <state relative-caret-position="399">
+              <caret line="39" column="74" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="74" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -61,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/IntroPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+            <state relative-caret-position="316">
+              <caret line="64" column="74" selection-start-line="64" selection-start-column="74" selection-end-line="64" selection-end-column="74" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -138,6 +135,7 @@
       <find>id = &quot;common_padding&quot;</find>
       <find>as='h3'</find>
       <find>isTablet</find>
+      <find>isBrowser || isTablet</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,10 +164,10 @@
         <option value="$PROJECT_DIR$/src/components/shared/Header.js" />
         <option value="$PROJECT_DIR$/src/components/shared/Footer.css" />
         <option value="$PROJECT_DIR$/src/components/FontStyle.css" />
-        <option value="$PROJECT_DIR$/src/components/TeamPage.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/CodeBlock.js" />
         <option value="$PROJECT_DIR$/src/components/HomePage.js" />
+        <option value="$PROJECT_DIR$/src/components/TeamPage.js" />
         <option value="$PROJECT_DIR$/src/components/IntroPage.js" />
       </list>
     </option>
@@ -226,7 +224,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HoloRepository-Core" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HoloRepository-Core/HoloRepositoryUI" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -298,12 +296,13 @@
       <workItem from="1566135737780" duration="25276000" />
       <workItem from="1566171337444" duration="138000" />
       <workItem from="1566205310033" duration="13826000" />
-      <workItem from="1566242753715" duration="1804000" />
+      <workItem from="1566242753715" duration="1855000" />
+      <workItem from="1566252864081" duration="2603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95445000" />
+    <option name="totallyTimeSpent" value="98099000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -410,16 +409,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CodeBlock.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -458,10 +447,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TeamPage.js">
+    <entry file="file://$PROJECT_DIR$/src/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="86" column="59" lean-forward="true" selection-start-line="78" selection-start-column="36" selection-end-line="86" selection-end-column="59" />
+        <state relative-caret-position="114">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -470,8 +459,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/HomePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="38" column="67" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="67" />
+        <state relative-caret-position="2147">
+          <caret line="131" column="58" selection-start-line="131" selection-start-column="58" selection-end-line="131" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TeamPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="39" column="74" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="74" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -480,8 +479,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/IntroPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+        <state relative-caret-position="316">
+          <caret line="64" column="74" selection-start-line="64" selection-start-column="74" selection-end-line="64" selection-end-column="74" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
