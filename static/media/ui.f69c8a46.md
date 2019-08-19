@@ -98,9 +98,11 @@ This needs to be done in both the `client` and `server` sub-directories.
 Once the API server is started locally, it will be available at [http://localhost:3001/api/v1](http://localhost:3001/api/v1). It can be tested, for instance using `curl`:
 
 <div style="background-color:#f4f4f4">
+<div style="overflow-x: scroll" width = "100%">
 ```shell
  curl localhost:3001/api/v1/patients
 ```
+</div>
 </div>
 
 If you run the React client at the same time, it will be using port `3000` and accessing the server at `3001`.

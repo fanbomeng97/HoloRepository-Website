@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/HoloRepository-Website/static/css/main.f8da4b8e.chunk.css",
-    "main.js": "/HoloRepository-Website/static/js/main.36de6e28.chunk.js",
-    "main.js.map": "/HoloRepository-Website/static/js/main.36de6e28.chunk.js.map",
+    "main.js": "/HoloRepository-Website/static/js/main.422637de.chunk.js",
+    "main.js.map": "/HoloRepository-Website/static/js/main.422637de.chunk.js.map",
     "runtime~main.js": "/HoloRepository-Website/static/js/runtime~main.bd5900b0.js",
     "runtime~main.js.map": "/HoloRepository-Website/static/js/runtime~main.bd5900b0.js.map",
     "static/js/2.ae1ff373.chunk.js": "/HoloRepository-Website/static/js/2.ae1ff373.chunk.js",
     "static/js/2.ae1ff373.chunk.js.map": "/HoloRepository-Website/static/js/2.ae1ff373.chunk.js.map",
     "index.html": "/HoloRepository-Website/index.html",
-    "precache-manifest.62863f480133d01fa4c4611c782856de.js": "/HoloRepository-Website/precache-manifest.62863f480133d01fa4c4611c782856de.js",
+    "precache-manifest.1b9bae9149b7a533e7029486b263b82a.js": "/HoloRepository-Website/precache-manifest.1b9bae9149b7a533e7029486b263b82a.js",
     "service-worker.js": "/HoloRepository-Website/service-worker.js",
     "static/css/main.f8da4b8e.chunk.css.map": "/HoloRepository-Website/static/css/main.f8da4b8e.chunk.css.map",
     "static/media/accessor.md": "/HoloRepository-Website/static/media/accessor.01185da0.md",
     "static/media/background.png": "/HoloRepository-Website/static/media/background.5e3ed3fd.png",
-    "static/media/connector.md": "/HoloRepository-Website/static/media/connector.58c1a38c.md",
+    "static/media/connector.md": "/HoloRepository-Website/static/media/connector.888a8963.md",
     "static/media/general.md": "/HoloRepository-Website/static/media/general.af21991d.md",
     "static/media/hololens.md": "/HoloRepository-Website/static/media/hololens.cdb839fc.md",
     "static/media/intro.jpg": "/HoloRepository-Website/static/media/intro.98e2e1a0.jpg",
     "static/media/pipeline.md": "/HoloRepository-Website/static/media/pipeline.1b7a14f4.md",
     "static/media/team.jpg": "/HoloRepository-Website/static/media/team.bd83dd67.jpg",
-    "static/media/ui.md": "/HoloRepository-Website/static/media/ui.c49d4d96.md"
+    "static/media/ui.md": "/HoloRepository-Website/static/media/ui.f69c8a46.md"
   }
 }

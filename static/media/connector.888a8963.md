@@ -10,7 +10,7 @@ To use the HoloStorageConnector, after you import the asset package, you could i
 using HoloStorageConnector;
 ```
 
-## HoloStorageClient
+### HoloStorageClient
 `HoloStorageClient` script provided multiple methods to retrieve data from Storage server. For now, you could retrieve the meta data of patients, holograms and authors based on ID, and also load 3D object from the server. Please note, currently the `LoadHologram` method only load the object from a hard code uri. You have to create a coroutine to run the retrieve methods, the details could be found in example usage.
 
 <div style="overflow-x: scroll" width = "100%">
@@ -51,7 +51,7 @@ using HoloStorageConnector;
 </table>
 </div>
 
-###Example usage:
+####Example usage:
 
 <div style="background-color:#f4f4f4">
 <div style="overflow-x: scroll" width = "100%">
@@ -78,7 +78,7 @@ using HoloStorageConnector;
 </div>
 </div>
 
-## HologramInstantiationSettings
+### HologramInstantiationSettings
 `HologramInstantiationSettings` script allow users to set the transform settings before load the 3D object from server, for example, set the position, rotation and scale of the 3D object, you can also determine whether the object could be manipulated or which scene you want to load.
 
 <table width = "100%">
@@ -112,7 +112,7 @@ using HoloStorageConnector;
   </tr>
 </table>
 
-###Example usage:
+####Example usage:
 
 You could create a HologramInstantiationSettings instance before you load the hologram, and pass the settings as a parameter when call the LoadHologram method. The settings are optional, if you ignore the settings, the value of each properties will be set to default.
 
@@ -134,7 +134,7 @@ You could create a HologramInstantiationSettings instance before you load the ho
 </div>
 </div>
 
-## HoloStorageEntities
+### HoloStorageEntities
 `HoloStorageEntities` script is used to define the related HoloStorage entities, make it easier to map the information from json data. 
 
 <table width = "100%">
@@ -160,17 +160,17 @@ You could create a HologramInstantiationSettings instance before you load the ho
   </tr>
 </table>
 
-## Prefabs
+### Prefabs
 This package also provided some prefabs to save your development time, which could be found in Prefabs folder.
 
-### InformationList
+#### InformationList
 You could add this list view to you scene, choose the information type that you want to get, whether patient or hologram, you could also select what information you want to display in the list, all settings could be done in inspector.
 
 <p align="center">
     <img src="https://media.githubusercontent.com/media/nbckr/HoloRepository-HoloLens/dev/HoloRepositoryDemoApplication/Images/InformationList.png" width="40%">
 </p>
 
-### HologramLoader
+#### HologramLoader
 Drag this prefab into you scene, and set the related options in the inspector. In the play mode, it will load the hologram to you scene. 
 
 <p align="center">
