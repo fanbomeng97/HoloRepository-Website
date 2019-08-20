@@ -10,7 +10,7 @@ The HoloRepository is a system for transforming medical imaging studies such as 
 
 ## Description
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/11090412/62010805-49d5b180-b167-11e9-8f36-af05454f3a15.png" alt="screenshot" width="65%" />
+  <img src="https://user-images.githubusercontent.com/11090412/62010805-49d5b180-b167-11e9-8f36-af05454f3a15.png" alt="screenshot" width="65%" hspace="20" vspace="10"/>
 </p>
 
 To facilitate the access to the HoloStorage for 3rd party projects and future projects, we provide a library which is distributed as AssetPackage, can be imported into Unity projects and added to Scenes as a configurable GameObject. It provides a layer of abstraction for the network calls and API accesses performed to dynamically load data from the HoloStorage into HoloLens applications at runtime.

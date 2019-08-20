@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "293ca3f6cde8ac11e6173ca3d525bf8d",
+    "revision": "bf15b2374bc39f92f8ed0b0032154cc6",
     "url": "/HoloRepository-Website/index.html"
   },
   {
-    "revision": "29a0ee569c3b7261aaa4",
+    "revision": "37818bc0ad96d45dc5dc",
     "url": "/HoloRepository-Website/static/css/main.f8da4b8e.chunk.css"
   },
   {
@@ -12,16 +12,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/HoloRepository-Website/static/js/2.ae1ff373.chunk.js"
   },
   {
-    "revision": "29a0ee569c3b7261aaa4",
-    "url": "/HoloRepository-Website/static/js/main.d7054682.chunk.js"
+    "revision": "37818bc0ad96d45dc5dc",
+    "url": "/HoloRepository-Website/static/js/main.f5cc264d.chunk.js"
   },
   {
     "revision": "3f8862f88a6e8213a1de",
     "url": "/HoloRepository-Website/static/js/runtime~main.bd5900b0.js"
   },
   {
-    "revision": "ec2ca9abf21ca9bb98c22a5873561bfb",
-    "url": "/HoloRepository-Website/static/media/accessor.ec2ca9ab.md"
+    "revision": "3b835f5d6c22e90f6c1c4c7b2b233dac",
+    "url": "/HoloRepository-Website/static/media/accessor.3b835f5d.md"
   },
   {
     "revision": "5e3ed3fdd520299bf346b62512c055a4",
@@ -36,23 +36,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/HoloRepository-Website/static/media/general.af21991d.md"
   },
   {
-    "revision": "cdb839fcc9b2601bdae8d71efc724e44",
-    "url": "/HoloRepository-Website/static/media/hololens.cdb839fc.md"
+    "revision": "5541e3455bdf0a46c3191d42eb425409",
+    "url": "/HoloRepository-Website/static/media/hololens.5541e345.md"
   },
   {
     "revision": "98e2e1a0552dc43f7583019618e4a753",
     "url": "/HoloRepository-Website/static/media/intro.98e2e1a0.jpg"
   },
   {
-    "revision": "1b7a14f4ebb9b79f00cc09ad5ded1be2",
-    "url": "/HoloRepository-Website/static/media/pipeline.1b7a14f4.md"
+    "revision": "59c7a5a87a6f2dcfb658b00cbccb3cc3",
+    "url": "/HoloRepository-Website/static/media/pipeline.59c7a5a8.md"
   },
   {
     "revision": "bd83dd6701dc49f3ef999cbac3a8b350",
     "url": "/HoloRepository-Website/static/media/team.bd83dd67.jpg"
   },
   {
-    "revision": "f69c8a4630e46f337297787c31f7243e",
-    "url": "/HoloRepository-Website/static/media/ui.f69c8a46.md"
+    "revision": "d51910ab39ef0a4cbc76bc9c89cf79e9",
+    "url": "/HoloRepository-Website/static/media/ui.d51910ab.md"
   }
 ]);
