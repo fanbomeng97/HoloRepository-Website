@@ -3,23 +3,14 @@ import SharedHeader from "./shared/Header";
 import SharedFooter from "./shared/Footer";
 import BackgroundImage from "../images/background.png";
 import "./FontStyle.css";
-import {
-    Header,
-    Segment,
-    Grid,
-    Container,
-    Button,
-    Icon,
-    Label,
-    Image,
-    Divider
-} from "semantic-ui-react";
+import {Header, Segment, Grid, Container, Button, Icon, Image, Divider} from "semantic-ui-react";
 import {Link} from "react-router-dom";
 import { isBrowser, isTablet } from "react-device-detect";
 
 const headerStyle = {
-    fontSize: isBrowser ? '2.2em' : '1.3em',
-    fontWeight: 'normal'
+    fontSize: isBrowser ? '2.1em' : '1.5em',
+    fontWeight: 'normal',
+    padding: isBrowser ? "0em 1em": "0em 1.5em"
 };
 
 class HomePage extends Component {
@@ -57,7 +48,7 @@ class HomePage extends Component {
                                 3-dimensional holograms, storing data on a cloud-based platform and making it available
                                 for other systems.
                             </p>
-                            <Button primary size='huge' as={Link} to="/intro" style={{marginTop: 50}}>
+                            <Button primary size='huge' as={Link} to={{ pathname : '/intro' , state : { element: 'title' }}} style={{marginTop: 50}}>
                                 Start Explore
                                 <Icon name='right arrow' />
                             </Button>
@@ -70,8 +61,7 @@ class HomePage extends Component {
                         <Grid.Row>
                             <Grid.Column width={8}>
                                 <Header style={headerStyle}>
-                                    <Label circular style={{ backgroundColor: '#ffc375', marginRight: 5}}/>
-                                    {"  HoloRepository UI"}
+                                    HoloRepository UI
                                 </Header>
                                 <p id = "grayFont">
                                     A web-based application that allows practitioners to browse their patients and manage the
@@ -79,6 +69,11 @@ class HomePage extends Component {
                                     application is accompanied by an API server that is responsible for communicating with the
                                     other components.
                                 </p>
+                                <div style = {{padding: "0em 2em"}}>
+                                    <Button as={Link} to={{ pathname : '/intro' , state : { element: 'ui' }}} style={{backgroundColor: '#ffc375', marginTop: 10}}>
+                                        <p style={{color: '#ffffff'}}>Explore more <Icon name='right arrow' /></p>
+                                    </Button>
+                                </div>
                             </Grid.Column>
                             <Grid.Column width={8} align='middle'>
                                 <Image src= "Images/ui.png" size = 'large'/>
@@ -91,22 +86,25 @@ class HomePage extends Component {
                             </Grid.Column>
                             <Grid.Column width={8}>
                                 <Header style={headerStyle}>
-                                    <Label circular style={{ backgroundColor: '#a9dc7f', marginRight: 5 }}/>
-                                    {"  HoloPipelines"}
+                                    HoloPipelines
                                 </Header>
                                 <p id = "grayFont">
                                     A cloud-based service that performs the automatic generation of 3D models from 2D image
                                     stacks. Pre-trained neural network models are deployed and accessed with this component
                                     alongside traditional techniques like Hounsfield value thresholding.
                                 </p>
+                                <div style = {{padding: "0em 2em"}}>
+                                    <Button as={Link} to={{ pathname : '/intro' , state : { element: 'pipeline' }}} style={{backgroundColor: '#a9dc7f', marginTop: 10}}>
+                                        <p style={{color: '#ffffff'}}>Explore more <Icon name='right arrow' /></p>
+                                    </Button>
+                                </div>
                             </Grid.Column>
                         </Grid.Row>
                         <Divider/>
                         <Grid.Row>
                             <Grid.Column width={8}>
                                 <Header style={headerStyle}>
-                                    <Label circular style={{ backgroundColor: '#8bbfe7', marginRight: 5}}/>
-                                    {"  HoloStorage and Accessor"}
+                                    HoloStorage and Accessor
                                 </Header>
                                 <p id = "grayFont">
                                     A cloud-based storage for medical 3D models and associated metadata. Entirely hosted on
@@ -118,6 +116,11 @@ class HomePage extends Component {
                                     the public REST API to internal FHIR queries. To facilitate development of 3rd party
                                     components, the interface comes with an interactive OpenAPI documentation.
                                 </p>
+                                <div style = {{padding: "0em 2em"}}>
+                                    <Button as={Link} to={{ pathname : '/intro' , state : { element: 'accessor' }}} style={{backgroundColor: '#8bbfe7', marginTop: 10}}>
+                                        <p style={{color: '#ffffff'}}>Explore more <Icon name='right arrow' /></p>
+                                    </Button>
+                                </div>
                             </Grid.Column>
                             <Grid.Column width={8} align='middle'>
                                 <Image src= "Images/accessor.png" size = 'large'/>
@@ -130,8 +133,7 @@ class HomePage extends Component {
                             </Grid.Column>
                             <Grid.Column width={8}>
                                 <Header style={headerStyle}>
-                                    <Label circular style={{ backgroundColor: '#d1bcd2', marginRight: 5}}/>
-                                    {" HoloLens App and Storage Connector"}
+                                    HoloLens App and Storage Connector
                                 </Header>
                                 <p id = "grayFont">
                                     A simple application that demonstrates how to dynamically access 3D models stored in the
@@ -143,6 +145,11 @@ class HomePage extends Component {
                                     the HoloStorage. Distributed as a separate UnityPackage, this is meant to facilitate
                                     development of 3rd party applications that plug into the HoloRepository ecosystem.
                                 </p>
+                                <div style = {{padding: "0em 2em"}}>
+                                    <Button as={Link} to={{ pathname : '/intro' , state : { element: 'hololens' }}} style={{backgroundColor: '#d1bcd2', marginTop: 10}} >
+                                        <p style={{color: '#ffffff'}}>Explore more <Icon name='right arrow' /></p>
+                                    </Button>
+                                </div>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>

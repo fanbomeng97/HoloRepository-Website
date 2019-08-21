@@ -1,5 +1,5 @@
 # HoloStorageConnector
-HoloStorageConnector is used to provide an importable Unity asset package, to facilitate the development of HoloLens app with HoloStorage. This package build the connection with HoloStorage based on the [HoloStorage Accessor API](https://app.swaggerhub.com/apis/boonwj/HoloRepository/1.0.0#/). Current connector package is developed based on HoloStorage Accessor API version 1.0.0, you can access our main [GitHub repository](https://github.com/nbckr/HoloRepository-Core) to find more information about the HoloStorage Accessor server.
+HoloStorageConnector is used to provide an importable Unity asset package, to facilitate the development of HoloLens app with HoloStorage. This package build the connection with HoloStorage based on the [HoloStorage Accessor API](https://app.swaggerhub.com/apis/boonwj/HoloRepository/1.1.0#/). Current connector package is developed based on HoloStorage Accessor API version 1.1.0, you can access our main [GitHub repository](https://github.com/nbckr/HoloRepository-Core) to find more information about the HoloStorage Accessor server.
 
 **Important note**: Currently, the HoloStorageConnector script is developed inside the DemoApplication. This folder only contains a symbolic link to the package inside that applicatiton's `Assets/` in order to prevent duplicate code. Ideally, it would be the other way around. However, due to inconsistencies in how Windows supports symlinks, this can break the build (if the symlink is not recognised in a Windows development environment, the Connector namespace is missing in the demo app). For 3rd party developers to obtain the package they can copy the folder or, which is the recommended way, download the AssetPackage from a GitHub release. 
 
@@ -11,7 +11,7 @@ using HoloStorageConnector;
 ```
 
 ### HoloStorageClient
-`HoloStorageClient` script provided multiple methods to retrieve data from Storage server. For now, you could retrieve the meta data of patients, holograms and authors based on ID, and also load 3D object from the server. Please note, currently the `LoadHologram` method only load the object from a hard code uri. You have to create a coroutine to run the retrieve methods, the details could be found in example usage.
+`HoloStorageClient` script provided multiple methods to retrieve data from Storage server. For now, you could retrieve the meta data of patients, holograms and authors based on ID, and also load 3D object from the server. You have to create a co-routine to run the retrieve methods, the details could be found in example usage.
 
 <div style="overflow-x: scroll" width = "100%">
 <table width = "100%">
@@ -182,7 +182,7 @@ Drag this prefab into you scene, and set the related options in the inspector. I
     <img src="https://media.githubusercontent.com/media/nbckr/HoloRepository-HoloLens/dev/HoloRepositoryDemoApplication/Images/DemoScene.png" width="40%">
 </p>
 
-This package also provided some demo scene to guide the developer how to use this package, which you can find [here](../HoloRepositoryDemoApplication/Assets/HoloStorageConnector/Demo). You could follow the StorageConnectorDemo scene and demo script to learn the basic usage of the HoloStorageConnector package. There is also a prefab scene to demostrate how to use the prefabs, feel free to explore.
+This package also provided some demo scene to guide the developer how to use this package. You could follow the StorageConnectorDemo scene and demo script to learn the basic usage of the HoloStorageConnector package. There is also a prefab scene to demostrate how to use the prefabs, feel free to explore.
 
 Note: You have to import the TMP Essentials when you open the scenes at first time, just follow the guide in the window.
 

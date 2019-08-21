@@ -3,20 +3,7 @@ import SharedHeader from "./shared/Header";
 import SharedFooter from "./shared/Footer";
 import "./FontStyle.css";
 import BackgroundImage from "../images/intro.jpg";
-import general from '../data/general.md'
-import ui from '../data/ui.md'
-import pipeline from '../data/pipeline.md'
-import accessor from '../data/accessor.md'
-import hololens from '../data/hololens.md'
-import connector from '../data/connector.md'
-import {
-    Header,
-    Segment,
-    Container,
-    Card,
-    Label,
-    Grid,
-} from "semantic-ui-react";
+import {Header, Segment, Container, Card, Label, Grid,} from "semantic-ui-react";
 import Markdown from 'markdown-to-jsx';
 import {isBrowser, isTablet} from "react-device-detect";
 
@@ -27,23 +14,11 @@ const markdownStyle = {
 };
 
 class IntroPage extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            general: "",
-            ui: "",
-            pipeline: "",
-            accessor: "",
-            hololens: "",
-            connector: "",
-        }
-    }
-
     render() {
         return (
             <div>
                 <SharedHeader activeItem='Introduction'/>
-                <div style={{
+                <div id="title" style={{
                     minHeight: 200,
                     backgroundImage: `url(${BackgroundImage})`,
                     backgroundPosition: 'center',
@@ -65,39 +40,39 @@ class IntroPage extends Component {
                 <Segment style={{ marginTop: 0, backgroundColor: '#f8f8f8'}}>
                     <Grid>
                         <Grid.Row>
-                            {isBrowser ? <Grid.Column width= '3' /> : ''}
-                            <Grid.Column width={isBrowser ? 10 : 16}>
+                            {isBrowser ? <Grid.Column width= '2' /> : ''}
+                            <Grid.Column width={isBrowser ? 12 : 16}>
                                 <Container textAlign='justified'>
                                     <Segment>
                                         <Label ribbon style={{ padding: '0.5em 1em'}}>
                                             General
                                         </Label>
-                                        <Markdown children={this.state.general} style={markdownStyle}/>
+                                        <Markdown children={this.props.general} style={markdownStyle}/>
                                     </Segment>
-                                    <Segment>
+                                    <Segment id = "ui">
                                         <Label ribbon style={{ backgroundColor: '#ffc375'}}>
                                             HoloRepository UI
                                         </Label>
-                                        <Markdown children={this.state.ui} style={markdownStyle }/>
+                                        <Markdown children={this.props.ui} style={markdownStyle }/>
                                     </Segment>
-                                    <Segment>
+                                    <Segment id = "pipeline">
                                         <Label ribbon style={{ backgroundColor: '#a9dc7f'}}>
                                             HoloPipelines
                                         </Label>
-                                        <Markdown children={this.state.pipeline} style={markdownStyle}/>
+                                        <Markdown children={this.props.pipeline} style={markdownStyle}/>
                                     </Segment>
-                                    <Segment>
+                                    <Segment id = "accessor">
                                         <Label ribbon style={{ backgroundColor: '#8bbfe7'}}>
                                             HoloStorage and Accessor
                                         </Label>
-                                        <Markdown children={this.state.accessor} style={markdownStyle}/>
+                                        <Markdown children={this.props.accessor} style={markdownStyle}/>
                                     </Segment>
-                                    <Segment>
+                                    <Segment id = "hololens">
                                         <Label ribbon style={{ backgroundColor: '#d1bcd2'}}>
                                             HoloLens App and StorageConnector
                                         </Label>
-                                        <Markdown children={this.state.hololens} style={markdownStyle}/>
-                                        <Markdown children={this.state.connector} style={markdownStyle}/>
+                                        <Markdown children={this.props.hololens} style={markdownStyle}/>
+                                        <Markdown children={this.props.connector} style={markdownStyle}/>
                                     </Segment>
                                     <Card fluid style={{ marginTop: '3em'}}>
                                         <Card.Content>
@@ -129,7 +104,7 @@ class IntroPage extends Component {
                                     </Card>
                                 </Container>
                             </Grid.Column>
-                            {isBrowser || isTablet  ? <Grid.Column width= '3' /> : ''}
+                            {isBrowser || isTablet  ? <Grid.Column width= '2' /> : ''}
                         </Grid.Row>
                     </Grid>
                 </Segment>
@@ -138,41 +113,17 @@ class IntroPage extends Component {
         );
     }
 
-    componentWillMount() {
-        fetch(general)
-            .then((res) => res.text())
-            .then((general) => {
-                this.setState({ general })
-            });
-        fetch(ui)
-            .then((res) => res.text())
-            .then((ui) => {
-                this.setState({ ui })
-            });
-        fetch(pipeline)
-            .then((res) => res.text())
-            .then((pipeline) => {
-                this.setState({ pipeline })
-            });
-        fetch(accessor)
-            .then((res) => res.text())
-            .then((accessor) => {
-                this.setState({ accessor })
-            });
-        fetch(hololens)
-            .then((res) => res.text())
-            .then((hololens) => {
-                this.setState({ hololens })
-            });
-        fetch(connector)
-            .then((res) => res.text())
-            .then((connector) => {
-                this.setState({ connector })
-            })
-    }
-
     componentDidMount() {
-        window.scrollTo(0, 0);
+        if (this.props.location.state !== undefined) {
+            let anchorElement = document.getElementById(this.props.location.state.element);
+            if(anchorElement) {
+                if(this.props.location.state.element === "title"){
+                    window.scrollTo(0, 0);
+                }else{
+                    window.scrollTo(0, anchorElement.offsetTop + 150);
+                }
+            }
+        }
     }
 }
 

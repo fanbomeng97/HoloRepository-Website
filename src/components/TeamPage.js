@@ -2,14 +2,7 @@ import React, { Component } from "react";
 import SharedHeader from "./shared/Header";
 import SharedFooter from "./shared/Footer";
 import "./FontStyle.css";
-import {
-    Header,
-    Segment,
-    Image,
-    Grid,
-    Divider,
-    Container
-} from "semantic-ui-react";
+import {Header, Segment, Image, Grid, Divider, Container} from "semantic-ui-react";
 import { isBrowser,isMobile } from "react-device-detect";
 import BackgroundImage from "../images/team.jpg";
 
@@ -74,7 +67,7 @@ class TeamPage extends Component {
                                     </Grid.Column>
                                     {isBrowser ?
                                         <Grid.Column width={3}>
-                                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' circular/>
+                                            <Image src= "Images/pap.png" circular/>
                                         </Grid.Column>: ''}
                                     {isBrowser ?
                                         <Grid.Column width={5}>
@@ -90,7 +83,7 @@ class TeamPage extends Component {
                                 {isMobile ?
                                     <Grid.Row>
                                         <Grid.Column width={3}>
-                                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' circular/>
+                                            <Image src= "Images/pap.png" circular/>
                                         </Grid.Column>
                                         <Grid.Column width={13}>
                                             <Header id = "normal_2">
@@ -118,7 +111,7 @@ class TeamPage extends Component {
 
                                     {isBrowser ?
                                         <Grid.Column width={3}>
-                                            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' circular/>
+                                            <Image src= "Images/kawai.jpg" circular/>
                                         </Grid.Column> : ''}
                                     {isBrowser ?
                                         <Grid.Column width={5}>
@@ -133,7 +126,7 @@ class TeamPage extends Component {
                                 {isMobile ? <Divider /> : ''}
                                 {isMobile ?  <Grid.Row>
                                     <Grid.Column width={3}>
-                                        <Image src='https://react.semantic-ui.com/images/wireframe/image.png' circular/>
+                                        <Image src= "Images/kawai.jpg" circular/>
                                     </Grid.Column>
                                     <Grid.Column width={13}>
                                         <Header id = "normal_2">

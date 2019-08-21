@@ -1,10 +1,5 @@
 import React, { Component } from "react";
-import {
-    Icon,
-    Image,
-    Menu,
-    Container
-} from "semantic-ui-react";
+import {Icon, Image, Menu, Container} from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { isBrowser, isTablet } from "react-device-detect";
 
@@ -25,7 +20,7 @@ class SharedHeader extends Component {
             <Menu fixed='top' style={{ backgroundColor: '#ffffff'}} pointing secondary size='huge'>
                 <Container >
                     {isBrowser || isTablet ? (
-                        <Menu.Item as={Link} to="/home" style={{ padding: '1em 2em'}}>
+                        <Menu.Item as={Link} to="/home">
                             <Image src="Images/logo_with_title.png" size = "small"/>
                         </Menu.Item>
                     ) : (
@@ -45,7 +40,7 @@ class SharedHeader extends Component {
                         name='Introduction'
                         active={activeItem === 'Introduction'}
                         onClick={this.handleItemClick}
-                        as={Link} to="/intro"
+                        as={Link} to={{ pathname : '/intro' , state : { element: 'title' }}}
                     >
                         <Icon name = "list ul"/>
                         {isBrowser || isTablet ? "Introduction" : ""}
@@ -55,7 +50,7 @@ class SharedHeader extends Component {
                         name='Team'
                         active={activeItem === 'Team'}
                         onClick={this.handleItemClick}
-                        as={Link} to="/Team"
+                        as={Link} to="/team"
                     >
                         <Icon name = "users"/>
                         {isBrowser || isTablet ? "Team" : ""}
