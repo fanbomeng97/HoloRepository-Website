@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "61a89ecac739a368708028fd44c80aa1",
+    "revision": "215272f4801328d1fce7b47870e3d72d",
     "url": "/HoloRepository-Website/index.html"
   },
   {
-    "revision": "cf2e600555a811c4c85b",
-    "url": "/HoloRepository-Website/static/css/main.f8da4b8e.chunk.css"
+    "revision": "aecf9263cc808825a654",
+    "url": "/HoloRepository-Website/static/css/main.bc6bb88d.chunk.css"
   },
   {
-    "revision": "b59bfe2e8386762c77c0",
-    "url": "/HoloRepository-Website/static/js/2.af0346c6.chunk.js"
+    "revision": "da8ccdca96b6ec83eac4",
+    "url": "/HoloRepository-Website/static/js/2.df47bbb9.chunk.js"
   },
   {
-    "revision": "cf2e600555a811c4c85b",
-    "url": "/HoloRepository-Website/static/js/main.058f978b.chunk.js"
+    "revision": "aecf9263cc808825a654",
+    "url": "/HoloRepository-Website/static/js/main.082b48e4.chunk.js"
   },
   {
     "revision": "3f8862f88a6e8213a1de",
