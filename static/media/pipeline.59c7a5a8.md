@@ -4,7 +4,7 @@ A cloud-based service that performs the automatic generation of 3D models from 2
 
 ## Description
 
-<img src="../images/pipeline.png" alt="screenshot" width="35%" align="left" hspace="20" vspace="10"/>
+<img src="https://user-images.githubusercontent.com/11090412/62010807-49d5b180-b167-11e9-9ff5-cd221e94b265.png" alt="screenshot" width="35%" align="left" hspace="20" vspace="10"/>
 The HoloPipelines are responsible for the generation of 3D holograms to eventually be displayed in the HoloLens, sourced from DICOM imaging studies. The cloud-hosted service provides a consistent pipeline interface to consume DICOM and yield glTF2 files (plus associated patient data). By implementing a Docker-based template, arbitrary pre-trained neural network (NN) models can be plugged into the HoloPipelines service seamlessly. This allows to add new workflows in the future and implement each workflow independently.
 
 A typical pipeline will process the data fully automatic by utilising a NN model which has been trained to perform a specific task, such as segmenting the bones from a CT scan. Several Docker-based interfaces for distributing pre-trained models have been suggested, for instance the ModelHub.ai scheme, Niftinet or Microsoft Azure ML. We will iteratively add adapters for these interfaces, so that the HoloPipelines can integrate existing models.
