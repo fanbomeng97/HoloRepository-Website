@@ -21,7 +21,7 @@ using HoloStorageConnector;
   </tr>
   <tr>
     <td>`GetMultiplePatients(List<Patient> patientList, string IDs)`</td>
-    <td text-align = "right">Retrieve multiple patients meta data from HoloStorage server</td>
+    <td >Retrieve multiple patients meta data from HoloStorage server</td>
   </tr>
 
   <tr>

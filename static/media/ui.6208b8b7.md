@@ -4,7 +4,7 @@ A web-based application that allows practitioners to browse their patients and m
 
 ## Description
 
-<img src="https://user-images.githubusercontent.com/11090412/62010806-49d5b180-b167-11e9-8be4-24958650d228.png" alt="screenshot" width="35%" align="left" hspace="20" vspace="10"/>
+<img src="../images/ui.png" alt="screenshot" width="35%" align="left" hspace="20" vspace="10"/>
 
 HoloRepositoryUI is intended to be the main interface for practitioners to browse their patients, preview imaging studies such as CT or MRI scans, and trigger the automatic generation of 3D models sourced from the scans in the HoloPipelines.
 

@@ -7,6 +7,7 @@ Neural networks can help automate many tedious tasks and are increasingly used i
 With the HoloRepository project, we intend to build the technical base for a seamless workflow that allows practitioners to generate 3D models from imaging studies and access them in an AR setting with as little manual involvement as possible. Pre-trained neural networks can be packaged into shareable Docker containers and accessed with a unified interface. Additionally, the Fast Healthcare Interoperability Resources (FHIR) standard, which is rapidly being adapted and also has a significant impact on the field of radiology [8], will connect the 3D models with existing patient health records.
 
 # System overview
+
 <p align="center">
     <img src="https://user-images.githubusercontent.com/11090412/62009929-4852bc00-b15c-11e9-9e2a-6d7f667a286e.png" width="80%">
 </p>
