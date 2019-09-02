@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Icon, Image, Menu, Container} from "semantic-ui-react";
+import {Icon, Image, Menu, Container, Dropdown} from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { isBrowser, isTablet } from "react-device-detect";
 
@@ -36,15 +36,15 @@ class SharedHeader extends Component {
                         {isBrowser || isTablet ? "Home" : ""}
                     </Menu.Item>
 
-                    <Menu.Item
-                        name='Introduction'
-                        active={activeItem === 'Introduction'}
-                        onClick={this.handleItemClick}
-                        as={Link} to={{ pathname : '/intro' , state : { element: 'title' }}}
-                    >
-                        <Icon name = "list ul"/>
-                        {isBrowser || isTablet ? "Introduction" : ""}
-                    </Menu.Item>
+                    <Dropdown item text="Introduction" style={{fontSize: '1em', fontWeight: this.state.activeItem === "Introduction"? 'bold' : 'normal'}}>
+                        <Dropdown.Menu style={{fontSize: '0.8em', fontWeight: 'normal'}}>
+                            <Dropdown.Item name='intro' as={Link} to="/intro"  onClick={this.handleItemClick}>Overview</Dropdown.Item>
+                            <Dropdown.Item name='intro' as={Link} to="/intro/ui" onClick={this.handleItemClick}>HoloRepository UI</Dropdown.Item>
+                            <Dropdown.Item name='intro' as={Link} to="/intro/pipeline" onClick={this.handleItemClick}>HoloPipeline</Dropdown.Item>
+                            <Dropdown.Item name='intro' as={Link} to="/intro/accessor" onClick={this.handleItemClick}>HoloStorage and Accessor</Dropdown.Item>
+                            <Dropdown.Item name='intro' as={Link} to="/intro/hololensapp" onClick={this.handleItemClick}>HoloLens App and Storage Connector</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
 
                     <Menu.Item
                         name='Team'

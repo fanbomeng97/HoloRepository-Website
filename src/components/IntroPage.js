@@ -3,9 +3,11 @@ import SharedHeader from "./shared/Header";
 import SharedFooter from "./shared/Footer";
 import "./FontStyle.css";
 import BackgroundImage from "../images/intro.jpg";
-import {Header, Segment, Container, Card, Label, Grid,} from "semantic-ui-react";
+import {Header, Segment, Container, Card, Label, Grid, Button, Icon} from "semantic-ui-react";
+import StickyBox from "react-sticky-box";
 import Markdown from 'markdown-to-jsx';
 import {isBrowser, isTablet} from "react-device-detect";
+import {Link} from "react-router-dom";
 
 const markdownStyle = {
     padding: isBrowser || isTablet  ? '0.5em 2em':'0.5em 0.5em',
@@ -32,47 +34,23 @@ class IntroPage extends Component {
                         height: 200}}>
                         <Header
                             textAlign='center'
-                            content='Introduction'
-                            style={{fontSize: '4em', fontWeight: 'normal', marginTop: 75, color: '#ffffff'}}/>
+                            content='Overview'
+                            style={{fontSize: isBrowser ? '4em':'3em', fontWeight: 'normal', marginTop: 75, color: '#ffffff'}}/>
                     </Segment>
                 </div>
 
                 <Segment style={{ marginTop: 0, backgroundColor: '#f8f8f8'}}>
                     <Grid>
                         <Grid.Row>
-                            {isBrowser ? <Grid.Column width= '2' /> : ''}
+                            {isBrowser ? <Grid.Column width= '2' >
+                            </Grid.Column>: ''}
                             <Grid.Column width={isBrowser ? 12 : 16}>
                                 <Container textAlign='justified'>
                                     <Segment>
                                         <Label ribbon style={{ padding: '0.5em 1em'}}>
-                                            General
+                                            Overview
                                         </Label>
                                         <Markdown children={this.props.general} style={markdownStyle}/>
-                                    </Segment>
-                                    <Segment id = "ui">
-                                        <Label ribbon style={{ backgroundColor: '#ffc375'}}>
-                                            HoloRepository UI
-                                        </Label>
-                                        <Markdown children={this.props.ui} style={markdownStyle }/>
-                                    </Segment>
-                                    <Segment id = "pipeline">
-                                        <Label ribbon style={{ backgroundColor: '#a9dc7f'}}>
-                                            HoloPipelines
-                                        </Label>
-                                        <Markdown children={this.props.pipeline} style={markdownStyle}/>
-                                    </Segment>
-                                    <Segment id = "accessor">
-                                        <Label ribbon style={{ backgroundColor: '#8bbfe7'}}>
-                                            HoloStorage and Accessor
-                                        </Label>
-                                        <Markdown children={this.props.accessor} style={markdownStyle}/>
-                                    </Segment>
-                                    <Segment id = "hololens">
-                                        <Label ribbon style={{ backgroundColor: '#d1bcd2'}}>
-                                            HoloLens App and StorageConnector
-                                        </Label>
-                                        <Markdown children={this.props.hololens} style={markdownStyle}/>
-                                        <Markdown children={this.props.connector} style={markdownStyle}/>
                                     </Segment>
                                     <Card fluid style={{ marginTop: '3em'}}>
                                         <Card.Content>
@@ -104,7 +82,13 @@ class IntroPage extends Component {
                                     </Card>
                                 </Container>
                             </Grid.Column>
-                            {isBrowser || isTablet  ? <Grid.Column width= '2' /> : ''}
+                            {isBrowser || isTablet  ? <Grid.Column width= '2' align='middle'>
+                                <StickyBox offsetTop={70} >
+                                    <Button as={Link} to={{ pathname : '/intro/ui'}} style={{marginTop: 10}} >
+                                        <Icon name = "right arrow"/>
+                                    </Button>
+                                </StickyBox>
+                            </Grid.Column> : ''}
                         </Grid.Row>
                     </Grid>
                 </Segment>
@@ -114,16 +98,7 @@ class IntroPage extends Component {
     }
 
     componentDidMount() {
-        if (this.props.location.state !== undefined) {
-            let anchorElement = document.getElementById(this.props.location.state.element);
-            if(anchorElement) {
-                if(this.props.location.state.element === "title"){
-                    window.scrollTo(0, 0);
-                }else{
-                    window.scrollTo(0, anchorElement.offsetTop + 150);
-                }
-            }
-        }
+        window.scrollTo(0, 0)
     }
 }
 

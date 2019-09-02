@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import HomePage from "./HomePage";
 import TeamPage from "./TeamPage";
 import IntroPage from "./IntroPage";
+import UI from "./HoloRepositoryUiPage";
+import Pipeline from "./HoloRepositoryPipelinePage";
+import Accessor from "./HoloRepositoryAccessorPage";
+import HololensApp from "./HoloLensAppPage";
 import { HashRouter, Route, Switch } from "react-router-dom";
 import general from "../data/general.md";
 import ui from "../data/ui.md";
@@ -43,15 +47,27 @@ class App extends Component {
                         <Route
                             exact
                             path="/intro"
-                            render={props => (<IntroPage
-                                {...props}
-                                general={this.state.general}
-                                ui={this.state.ui}
-                                pipeline={this.state.pipeline}
-                                accessor={this.state.accessor}
-                                hololens={this.state.hololens}
-                                connector={this.state.connector}
-                            />)}
+                            render={props => (<IntroPage{...props} general={this.state.general}/>)}
+                        />
+                        <Route
+                            exact
+                            path="/intro/ui"
+                            render={props => (<UI{...props} ui={this.state.ui}/>)}
+                        />
+                        <Route
+                            exact
+                            path="/intro/pipeline"
+                            render={props => (<Pipeline{...props} pipeline={this.state.pipeline}/>)}
+                        />
+                        <Route
+                            exact
+                            path="/intro/accessor"
+                            render={props => (<Accessor{...props} accessor={this.state.accessor}/>)}
+                        />
+                        <Route
+                            exact
+                            path="/intro/hololensapp"
+                            render={props => (<HololensApp {...props} hololens={this.state.hololens} connector={this.state.connector}/>)}
                         />
                         <Route
                             exact
@@ -64,7 +80,7 @@ class App extends Component {
         );
     }
 
-    componentWillMount() {
+    componentDidMount() {
         fetch(general)
             .then((res) => res.text())
             .then((general) => {

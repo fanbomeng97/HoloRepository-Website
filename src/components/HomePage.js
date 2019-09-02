@@ -48,7 +48,7 @@ class HomePage extends Component {
                                 3-dimensional holograms, storing data on a cloud-based platform and making it available
                                 for other systems.
                             </p>
-                            <Button primary size='huge' as={Link} to={{ pathname : '/intro' , state : { element: 'title' }}} style={{marginTop: 50}}>
+                            <Button primary size='huge' as={Link} to={{ pathname : '/intro'}} style={{marginTop: 50}}>
                                 Start Explore
                                 <Icon name='right arrow' />
                             </Button>
@@ -70,7 +70,7 @@ class HomePage extends Component {
                                     other components.
                                 </p>
                                 <div style = {{padding: "0em 2em"}}>
-                                    <Button as={Link} to={{ pathname : '/intro' , state : { element: 'ui' }}} style={{backgroundColor: '#ffc375', marginTop: 10}}>
+                                    <Button as={Link} to={{ pathname : '/intro/ui' }} style={{backgroundColor: '#ffc375', marginTop: 10}}>
                                         <p style={{color: '#ffffff'}}>Explore more <Icon name='right arrow' /></p>
                                     </Button>
                                 </div>
@@ -94,7 +94,7 @@ class HomePage extends Component {
                                     alongside traditional techniques like Hounsfield value thresholding.
                                 </p>
                                 <div style = {{padding: "0em 2em"}}>
-                                    <Button as={Link} to={{ pathname : '/intro' , state : { element: 'pipeline' }}} style={{backgroundColor: '#a9dc7f', marginTop: 10}}>
+                                    <Button as={Link} to={{ pathname : '/intro/pipeline' }} style={{backgroundColor: '#a9dc7f', marginTop: 10}}>
                                         <p style={{color: '#ffffff'}}>Explore more <Icon name='right arrow' /></p>
                                     </Button>
                                 </div>
@@ -117,7 +117,7 @@ class HomePage extends Component {
                                     components, the interface comes with an interactive OpenAPI documentation.
                                 </p>
                                 <div style = {{padding: "0em 2em"}}>
-                                    <Button as={Link} to={{ pathname : '/intro' , state : { element: 'accessor' }}} style={{backgroundColor: '#8bbfe7', marginTop: 10}}>
+                                    <Button as={Link} to={{ pathname : '/intro/accessor' }} style={{backgroundColor: '#8bbfe7', marginTop: 10}}>
                                         <p style={{color: '#ffffff'}}>Explore more <Icon name='right arrow' /></p>
                                     </Button>
                                 </div>
@@ -146,7 +146,7 @@ class HomePage extends Component {
                                     development of 3rd party applications that plug into the HoloRepository ecosystem.
                                 </p>
                                 <div style = {{padding: "0em 2em"}}>
-                                    <Button as={Link} to={{ pathname : '/intro' , state : { element: 'hololens' }}} style={{backgroundColor: '#d1bcd2', marginTop: 10}} >
+                                    <Button as={Link} to={{ pathname : '/intro/hololensapp'}} style={{backgroundColor: '#d1bcd2', marginTop: 10}} >
                                         <p style={{color: '#ffffff'}}>Explore more <Icon name='right arrow' /></p>
                                     </Button>
                                 </div>
